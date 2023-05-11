@@ -1,5 +1,5 @@
 const LandingPage = () => {
-	return <h5>Hello Japon!</h5>
+	return <h1>Hello Japon!</h1>
 }
 
 export default LandingPage
