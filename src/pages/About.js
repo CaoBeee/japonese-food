@@ -1,3 +1,5 @@
-export default function About() {
-	return <h5>About Page</h5>
+const About = () => {
+	return <h5>about Page</h5>
 }
+
+export default About
