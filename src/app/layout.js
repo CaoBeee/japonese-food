@@ -1,17 +1,16 @@
-import Head from 'next/head'
 import favicon from '../../public/favicon.ico'
+import Head from 'next/head'
 
 export default function RootLayout({ children }) {
 	return (
 		<html>
-			<Head>
-				<title>Japon</title>
+			<head>
 				<link
 					rel='shortcut icon'
 					href={favicon.src}
 					type='image/x-icon'
 				/>
-			</Head>
+			</head>
 			<body>{children}</body>
 		</html>
 	)
