@@ -1,11 +1,9 @@
-import '../styles/globals.css'
-import RootLayout from '../layouts/RootLayout'
 import Head from 'next/head'
 import favicon from '../../public/favicon.ico'
 
-function MyApp({ Component, pageProps }) {
+export default function RootLayout({ children }) {
 	return (
-		<RootLayout>
+		<html>
 			<Head>
 				<title>Japon</title>
 				<link
@@ -14,9 +12,7 @@ function MyApp({ Component, pageProps }) {
 					type='image/x-icon'
 				/>
 			</Head>
-			<Component {...pageProps} />
-		</RootLayout>
+			<body>{children}</body>
+		</html>
 	)
 }
-
-export default MyApp
