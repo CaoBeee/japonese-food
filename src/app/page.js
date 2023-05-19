@@ -1,11 +1,22 @@
-import '../styles/globals.css'
-import Layout from './layout'
+//App Level Page
+import React from 'react'
+import favicon from '../../public/favicon.ico'
+import Layout from '@/components/layout'
 
-export default function Page() {
+export default function Home() {
 	return (
-		<Layout>
-			<title>Japon</title>
-			<h1>In Page.jsx Hello Japon!</h1>
-		</Layout>
+		<React.Fragment>
+			<Layout>
+				<link
+					rel='shortcut icon'
+					href={favicon.src}
+					type='image/x-icon'
+				/>
+				<h1>App Level</h1>
+			</Layout>
+		</React.Fragment>
 	)
+}
+
+{
 }
