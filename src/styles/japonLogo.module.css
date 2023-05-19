@@ -1,20 +1,17 @@
-.logoContainer {
-	color: red;
-}
 .logo {
 	margin-top: 2rem;
 	margin-left: 1.5rem;
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* border: 1px red solid; */
+	cursor: pointer;
+}
+
+.logo:hover {
+	background-color: #ed5b55;
 }
 
 .vector {
 	width: auto;
 	height: auto;
-	/* position: relative; */
-	/* top: 0;
-	left: 0; */
-	/* border: 1px red solid; */
 }
