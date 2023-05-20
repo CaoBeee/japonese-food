@@ -5,10 +5,27 @@
 	top: 0;
 	left: 0;
 	cursor: pointer;
+	background-image: url('/public/img/logo_japonesefood.svg');
+	background-color: #ed5b55;
+	background-blend-mode: multiply;
+	border-radius: 20px;
 }
 
 .logo:hover {
+	color: aqua;
+	/* filter: saturate(10); */
 	background-color: #ed5b55;
+}
+
+.logo::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ed5b55;
+	z-index: 1;
 }
 
 .vector {
