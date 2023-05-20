@@ -1,0 +1,17 @@
+.logo {
+	margin-top: 2rem;
+	margin-left: 1.5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.logo:hover {
+	background-color: #ed5b55;
+}
+
+.vector {
+	width: auto;
+	height: auto;
+}
