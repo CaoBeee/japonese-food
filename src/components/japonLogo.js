@@ -4,20 +4,11 @@ import React from 'react'
 import styles from '../styles/japonLogo.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '/public/img/logo/logo_JaponeseFood.svg'
-import vectorBG from '/public/img/logo/logo_Vector.svg'
+import logo from '/public/img/logo/JaponeseFood.svg'
+import vectorBG from '/public/img/logo/Vector.svg'
 
 export default function JaponLogo() {
 	return (
-		<header
-			className={styles.container}
-			style={{
-				background: `url(${vectorBG.src})`,
-				backgroundRepeat: 'no-repeat',
-				backgroundSize: 'contain',
-			}}
-		>
-			<Link href='/'>
 		<header
 			className={styles.container}
 			style={{
