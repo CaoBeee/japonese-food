@@ -1,5 +1,6 @@
 import '../styles/globals.css'
-import Header from '@/components/header'
+import JaponLogo from '@/components/japonLogo'
+import NavigationBar from '@/components/navigationBar'
 
 export const metadata = {
 	title: 'Next.js',
@@ -10,9 +11,8 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<nav className='header'>
-					<Header />
-				</nav>
+				<JaponLogo />
+				<NavigationBar />
 				<div>{children}</div>
 			</body>
 		</html>

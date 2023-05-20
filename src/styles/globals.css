@@ -1,11 +1,8 @@
 * {
 	margin: 0;
+	background: url('/public/img/Vector.png');
 }
 
 body {
 	background-color: #f3ede6;
-}
-
-.header {
-	display: flex;
 }
