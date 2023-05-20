@@ -1,0 +1,14 @@
+.navBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navBar li {
+	list-style: none;
+	margin-right: 25px;
+}
+
+.navBar a {
+	text-decoration: none;
+}
