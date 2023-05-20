@@ -5,3 +5,7 @@
 body {
 	background-color: #f3ede6;
 }
+
+.header {
+	display: flex;
+}
