@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import styles from '../styles/japonLogo.module.css'
 import Image from 'next/image'
-import logo from '../../public/img/logo_japonesefood.png'
+import logo from '/public/img/logo_japonesefood.png'
 import vector from '/public/img/LogoVector.svg'
 
 export default function JaponLogo() {
