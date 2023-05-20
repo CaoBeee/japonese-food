@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#Virtual Studio
+/.vs
+
 # next.js
 /.next/
 /out/
