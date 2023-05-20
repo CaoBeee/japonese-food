@@ -18,6 +18,15 @@ export default function JaponLogo() {
 			}}
 		>
 			<Link href='/'>
+		<header
+			className={styles.container}
+			style={{
+				background: `url(${vectorBG.src})`,
+				backgroundRepeat: 'no-repeat',
+				backgroundSize: 'contain',
+			}}
+		>
+			<Link href='/'>
 				<Image
 					className={styles.logo}
 					src={logo}
