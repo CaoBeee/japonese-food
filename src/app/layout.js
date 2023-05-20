@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import Header from '@/components/header'
 
 export const metadata = {
 	title: 'Next.js',
@@ -8,6 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
+			<Header />
 			<body>{children}</body>
 		</html>
 	)
