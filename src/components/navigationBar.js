@@ -1,13 +1,21 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Link from 'next/link'
 import styles from '@/styles/navigationBar.module.css'
 
-export default function NavigationBar() {
+const NavigationBar = () => {
+	const [activePage, setActivePage] = useState('/')
 	return (
-		<React.Fragment>
+		<nav>
 			<ul className={styles.navBar}>
 				<li>
-					<Link href='/'>Home</Link>
+					<Link
+						href='/'
+						className={activePage === '/' ? 'active' : ''}
+					>
+						Home
+					</Link>
 				</li>
 				<li>|</li>
 				<li>
@@ -26,6 +34,8 @@ export default function NavigationBar() {
 					<Link href='/About'>About</Link>
 				</li>
 			</ul>
-		</React.Fragment>
+		</nav>
 	)
 }
+
+export default NavigationBar
