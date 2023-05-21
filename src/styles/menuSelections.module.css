@@ -1,0 +1,22 @@
+﻿.container{
+    display: flex;
+    flex-direction:column;
+    margin-left: 60px;
+    margin-top: 39px;
+    width: fit-content;
+    gap: 20px;
+    line-height: 39px;
+}
+
+    .container text {
+        font-family: 'Poppins';
+        font-weight: bold;
+        text-underline-offset: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: fit-content;
+    }
+
+        .container text:hover{
+            cursor:pointer;
+        }
