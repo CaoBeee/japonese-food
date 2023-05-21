@@ -15,6 +15,7 @@
 	font-family: 'Poppins';
 	font-weight: bold;
 	height: 250px;
+	user-select: none;
 }
 
 .headerSpan {
@@ -47,6 +48,7 @@
 
 .starContainer img {
 	margin-right: 10px;
+	user-select: none;
 }
 
 .paragraph {
