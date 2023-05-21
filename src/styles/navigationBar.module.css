@@ -4,17 +4,17 @@
 }
 
 .navBar {
-	/* margin-top: 100px; */
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .navBar li {
 	list-style: none;
 	margin-right: 25px;
-	border: 2px;
-	border-color: red;
+}
+
+.separator {
+	user-select: none;
+	font-weight: bold;
 }
 
 .navBar a {
@@ -22,6 +22,9 @@
 	text-decoration: none;
 	font-family: 'Poppins';
 	padding: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
 }
 
 .navBar a:hover {
@@ -29,6 +32,9 @@
 	border-style: solid;
 	border-color: red;
 	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .navBar a:active {
@@ -36,7 +42,16 @@
 	border-color: white;
 }
 
-.navBar a.active {
-	color: blue;
-	border-color: blue;
+.navBar .active {
+	color: red;
+	border-style: solid;
+	border-color: red;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.separator {
+	font-size: 22px;
 }
