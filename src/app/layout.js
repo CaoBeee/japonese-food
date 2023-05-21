@@ -1,6 +1,12 @@
 import '../styles/globals.css'
 import JaponLogo from '@/components/japonLogo'
+import Image from 'next/image'
 import NavigationBar from '@/components/navigationBar'
+import scallopPattern from '/public/img/home/BlueScallopPattern.svg'
+import tlb from '/public/img/home/TopRightCorner-LeftLine.svg'
+import tlr from '/public/img/home/TopRightCorner-RightLine.svg'
+import blu from '/public/img/home/BottomLeftCorner-EndingUp.svg'
+import bld from '/public/img/home/BottomLeftCorner-EndingDown.svg'
 
 export const metadata = {
 	title: 'Next.js',
@@ -13,7 +19,33 @@ export default function RootLayout({ children }) {
 			<body>
 				<JaponLogo />
 				<NavigationBar />
+				<Image
+					src={scallopPattern}
+					alt='scallop pattern'
+					className='scallop'
+				/>
+				<Image
+					src={tlr}
+					alt=''
+					className='tr-top'
+				/>
+				<Image
+					src={tlb}
+					alt=''
+					className='tr-bot'
+				/>
+
 				<div>{children}</div>
+				<Image
+					src={blu}
+					alt=''
+					className='bl-top'
+				/>
+				<Image
+					src={bld}
+					alt=''
+					className='bl-bot'
+				/>
 			</body>
 		</html>
 	)

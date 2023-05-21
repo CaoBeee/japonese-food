@@ -2,13 +2,19 @@
 
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { setCookie } from 'cookies-next';
+import { setCookie } from 'cookies-next'
 import styles from '@/styles/navigationBar.module.css'
 
 const NavigationBar = () => {
 	const [isActive, setActive] = useState()
 	const handleClick = link => () => {
 		setActive(link)
+	}
+
+	const handleOrderClick = link => {
+		setActive(link)
+		setCookie('menu_state', 1)
+		window.dispatchEvent(new Event('cookie'))
 	}
 
 	return (
@@ -49,11 +55,8 @@ const NavigationBar = () => {
 						className={isActive === '/Order' ? styles.active : ''}
 						href='/Order'
 						onClick={() => {
-							handleClick('/Order');
-							setCookie('menu_state', 1);
-							window.dispatchEvent(new Event("cookie"));
-							
-							}}
+							handleOrderClick('/Order')
+						}}
 					>
 						Order
 					</Link>
