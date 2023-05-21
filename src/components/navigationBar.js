@@ -1,37 +1,66 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import styles from '@/styles/navigationBar.module.css'
 
 const NavigationBar = () => {
-	const [activePage, setActivePage] = useState('/')
+	const [isActive, setActive] = useState()
+	const handleClick = link => () => {
+		setActive(link)
+	}
+
 	return (
 		<nav>
 			<ul className={styles.navBar}>
 				<li>
 					<Link
+						className={isActive === '/' ? styles.active : ''}
 						href='/'
-						className={activePage === '/' ? 'active' : ''}
+						onClick={handleClick('/')}
 					>
 						Home
 					</Link>
 				</li>
-				<li>|</li>
+				<li className={styles.separator}>|</li>
 				<li>
-					<Link href='/Delivery'>Delivery</Link>
+					<Link
+						className={isActive === '/Delivery' ? styles.active : ''}
+						href='/Delivery'
+						onClick={handleClick('/Delivery')}
+					>
+						Delivery
+					</Link>
 				</li>
-				<li>|</li>
+				<li className={styles.separator}>|</li>
 				<li>
-					<Link href='/Contact'>Contact</Link>
+					<Link
+						className={isActive === '/Contact' ? styles.active : ''}
+						href='/Contact'
+						onClick={handleClick('/Contact')}
+					>
+						Contact
+					</Link>
 				</li>
-				<li>|</li>
+				<li className={styles.separator}>|</li>
 				<li>
-					<Link href='/Order'>Order</Link>
+					<Link
+						className={isActive === '/Order' ? styles.active : ''}
+						href='/Order'
+						onClick={handleClick('/Order')}
+					>
+						Order
+					</Link>
 				</li>
-				<li>|</li>
+				<li className={styles.separator}>|</li>
 				<li>
-					<Link href='/About'>About</Link>
+					<Link
+						className={isActive === '/About' ? styles.active : ''}
+						href='/About'
+						onClick={handleClick('/About')}
+					>
+						About
+					</Link>
 				</li>
 			</ul>
 		</nav>

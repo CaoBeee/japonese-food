@@ -1,17 +1,71 @@
 .logo {
-	margin-top: 2rem;
-	margin-left: 1.5rem;
-	position: absolute;
-	top: 0;
-	left: 0;
 	cursor: pointer;
 }
 
 .logo:hover {
-	background-color: #ed5b55;
+	filter: opacity(85%);
 }
 
-.vector {
-	width: auto;
-	height: auto;
+.logo:active {
+	filter: contrast(10%);
+}
+
+/* CSS styles for mobile phones */
+@media (max-width: 700px) {
+	.container {
+		width: 35vw;
+		height: 20vh;
+	}
+
+	.logo {
+		width: 14vw;
+		height: 14vw;
+		margin-top: 0.8rem;
+		margin-left: 0.5rem;
+	}
+}
+
+/* CSS styles for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+	.container {
+		width: 25vw;
+		height: 15vh;
+	}
+
+	.logo {
+		width: 10vw;
+		height: 10vw;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+}
+
+/* CSS styles for laptops and desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.container {
+		width: 20rem;
+		height: 10rem;
+	}
+
+	.logo {
+		width: 10vw;
+		height: 10vw;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+}
+
+/* CSS styles for large screens and high-resolution displays */
+@media (min-width: 1025px) {
+	.container {
+		width: 15rem;
+		height: 10rem;
+	}
+
+	.logo {
+		width: 6rem;
+		height: 6rem;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
 }

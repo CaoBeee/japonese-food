@@ -6,6 +6,7 @@ body {
 	background-color: #f3ede6;
 }
 
-.header {
-	display: flex;
+body > header,
+body > nav {
+	display: inline-flex;
 }
