@@ -1,8 +1,6 @@
 ﻿.container {
 	display: flex;
 	flex-direction: column;
-	margin-left: 60px;
-	margin-top: 39px;
 	width: fit-content;
 	gap: 20px;
 	line-height: 39px;
@@ -15,6 +13,7 @@
 	padding-left: 8px;
 	padding-right: 8px;
 	width: fit-content;
+	white-space:nowrap;
 }
 
 .container p:hover {

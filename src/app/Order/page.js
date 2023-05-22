@@ -1,12 +1,30 @@
 "use client";
-import React, { useState } from 'react';
-import selections from '../../styles/menuSelections.module.css';
-import MenuSelections from '../../components/menuSelections'
+import React, {useEffect, useState } from 'react';
+import MenuSelections from '../../components/menuSelections';
+import PopularGallery from '../../components/popularGallery';
+import SushiRollGallery from '../../components/sushiRollGallery';
+import { getCookie} from 'cookies-next';
+import styles from '../../styles/order.module.css';
 
 export default function Order(props) {
-    const [selection, setSelection] = useState(0);
-
+    const [selectionState, setSelectionState] = useState(0);
+    useEffect(() => {
+        setSelectionState(getCookie('menu_state'));
+        const listenCookieChange = () => {
+            setSelectionState(getCookie('menu_state'));
+        }
+        window.addEventListener("cookie", listenCookieChange);
+        return () => window.removeEventListener("cookie", listenCookieChange);
+    }, [])
     return (
-        <MenuSelections/>
+        <div className={styles.container }>
+            <MenuSelections />
+            {selectionState == 1 &&
+                <PopularGallery />
+            }
+            {selectionState == 2 &&
+                <SushiRollGallery />
+            }
+        </div>
     )
 }
