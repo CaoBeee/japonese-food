@@ -1,18 +1,19 @@
 @font-face {
-	font-family: 'Poppins';
-	src: url('../../public/fonts/Poppins-Regular.ttf');
+	font-family: 'Poppins-Medium';
+	src: url('../../public/fonts/Poppins-Medium.ttf');
 }
 
 .navBar {
 	display: flex;
-	max-width: fit-content;
-	width: 20vw;
-	height: auto;
+	justify-items: center;
+	margin-left: 175px;
+	margin-top: 4rem;
 }
 
 .navBar li {
 	list-style: none;
-	margin-right: 1.5625rem;
+	margin-right: 2rem;
+	font-family: 'Poppins-Medium';
 }
 
 .separator {
@@ -23,17 +24,17 @@
 .navBar a {
 	color: black;
 	text-decoration: none;
-	font-family: 'Poppins';
 	padding: 0.3125rem;
-	font-weight: bold;
 	font-size: 1.25rem;
 	text-align: center;
 }
 
 .navBar a:hover {
-	color: red;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #ed5b55;
 	border-style: solid;
-	border-color: red;
+	border-color: #ed5b55;
 	border-radius: 0.3125rem;
 	font-size: 1.25rem;
 	font-weight: bold;
@@ -46,9 +47,11 @@
 }
 
 .navBar .active {
-	color: red;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #ed5b55;
 	border-style: solid;
-	border-color: red;
+	border-color: #ed5b55;
 	border-radius: 0.3125rem;
 	font-size: 1.25rem;
 	font-weight: bold;
