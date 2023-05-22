@@ -1,10 +1,112 @@
 .gallery_container{
     display:flex;
+}
+
+.gallery_items_container{
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 72px;
     gap: 30px;
     width: 550px;
+}
+
+.more_less_container {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height:100%;
+    font-family: "Poppins";
+    font-size: 26px;
+    font-weight: 700;
+    color: #ED5B55;
+}
+
+.up_span {
+    margin-bottom: auto;
+    width: fit-content;
+    padding: 6px;
+}
+
+.up_span:hover {
+    cursor: pointer;
+}
+
+.up_arrow {
+    display: flex;
+    margin: 30px auto;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid #ED5B55;
+    border-left: 4px solid #ED5B55;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    box-shadow: -3px -3px 3px rgba(237, 91, 85, 0.5);
+    margin-bottom: 14px;
+    margin-top: 6px;
+}
+
+    .up_arrow::after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 36px;
+        background-color: #ED5B55;
+        transform: rotate(-45deg) translate(11.33px, 3px);
+        box-shadow: -1px -1px 3px rgba(237, 91, 85, 0.5);
+        left: 0;
+        top: 0;
+    }
+
+.down_span{
+    margin-top:auto;
+    width: fit-content;
+    padding: 6px;
+}
+
+.down_span:hover{
+    cursor:pointer;
+}
+
+.down_arrow {
+    display: flex;
+    margin: 30px auto;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid #ED5B55;
+    border-left: 4px solid #ED5B55;
+    border-radius: 2px;
+    transform: rotate(-135deg);
+    box-shadow: -3px -3px 3px rgba(237, 91, 85, 0.5);
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+    .down_arrow::after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 36px;
+        background-color: #ED5B55;
+        transform: rotate(-45deg) translate(11.33px, 3px);
+        box-shadow: -1px -1px 3px rgba(237, 91, 85, 0.5);
+        left: 0;
+        top: 0;
+    }
+
+.less {
+    margin-top: 0;
+    text-shadow: 0px 3px 4px rgba(237, 91, 85, 0.5);
+    text-shadow: 0px 3px 4px rgba(237, 91, 85, 0.5);
+    text-align: center;
+}
+
+
+.more {
+    margin-bottom: 0;
+    position: relative;
+    text-shadow: 0px 3px 4px rgba(237, 91, 85, 0.5);
+    text-align: center;
 }
 
 .item_container{
@@ -19,10 +121,6 @@
     object-fit: cover;
 }
 
-.item_container:hover>.hover_container{
-    filter: opacity(1);
-}
-
 .hover_container {
     text-align: center;
     display: inline-block;
@@ -31,8 +129,7 @@
     width: 100%;
     height: 100%;
     border-radius: 30px;
-    filter: opacity(0);
-    transition: all 0.3s ease-in;
+    transition: all 0.5s ease-in-out;
 }
 
 .hover_container h1{
@@ -45,16 +142,18 @@
     margin-bottom: 5px;
     width: 100%;
     height:fit-content;
+    transition:inherit;
 }
 
-.hover_container p{
-    font-family:"Poppins";
-    font-size: 10px;
-    color:white;
-    margin-left: 12px;
-    margin-right:12px;
-    font-style:italic;
-}
+    .hover_container p {
+        font-family: "Poppins";
+        font-size: 10px;
+        color: white;
+        margin-left: 12px;
+        margin-right: 12px;
+        font-style: italic;
+        transition: inherit;
+    }
 
     .hover_container button {
         color: white;
@@ -67,4 +166,15 @@
         width: 100%;
         border-radius: 0px 0px 25px 25px;
         border-color: rgba(0,0,0,0);
+        transition: inherit;
     }
+
+.item_added_notif {
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: inherit;
+}
