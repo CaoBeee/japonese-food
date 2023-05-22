@@ -4,9 +4,55 @@
 
 body {
 	background-color: #f3ede6;
+	overflow: hidden;
 }
 
 body > header,
 body > nav {
 	display: inline-flex;
+}
+
+.scallop {
+	position: absolute;
+	top: 0px;
+	right: -25px;
+	width: 27vw;
+	height: auto;
+}
+.tr-top {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 31vw;
+	height: auto;
+	overflow: hidden;
+}
+
+.tr-bot {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 41vw;
+	height: auto;
+	overflow-y: hidden;
+}
+
+.bl-top {
+	position: absolute;
+	margin-left: -50px;
+	margin-top: -130px;
+	width: 1250px;
+	height: 300px;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.bl-bot {
+	position: absolute;
+	margin-left: -500px;
+	margin-top: -50px;
+	width: 1500px;
+	height: 350px;
+	z-index: -1;
+	overflow: hidden;
 }

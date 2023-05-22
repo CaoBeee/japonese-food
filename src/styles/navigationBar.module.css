@@ -5,11 +5,14 @@
 
 .navBar {
 	display: flex;
+	max-width: fit-content;
+	width: 20vw;
+	height: auto;
 }
 
 .navBar li {
 	list-style: none;
-	margin-right: 25px;
+	margin-right: 1.5625rem;
 }
 
 .separator {
@@ -21,9 +24,9 @@
 	color: black;
 	text-decoration: none;
 	font-family: 'Poppins';
-	padding: 5px;
+	padding: 0.3125rem;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1.25rem;
 	text-align: center;
 }
 
@@ -31,8 +34,8 @@
 	color: red;
 	border-style: solid;
 	border-color: red;
-	border-radius: 5px;
-	font-size: 20px;
+	border-radius: 0.3125rem;
+	font-size: 1.25rem;
 	font-weight: bold;
 	text-align: center;
 }
@@ -46,12 +49,12 @@
 	color: red;
 	border-style: solid;
 	border-color: red;
-	border-radius: 5px;
-	font-size: 20px;
+	border-radius: 0.3125rem;
+	font-size: 1.25rem;
 	font-weight: bold;
 	text-align: center;
 }
 
 .separator {
-	font-size: 22px;
+	font-size: 1.375rem;
 }

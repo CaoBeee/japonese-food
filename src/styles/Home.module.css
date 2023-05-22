@@ -1,0 +1,78 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('../../public/fonts/Poppins-Regular.ttf');
+}
+
+.container {
+	max-width: 1100px;
+	margin-top: 3rem;
+}
+
+.header {
+	font-size: 105px;
+	text-align: center;
+	line-height: 6rem;
+	font-family: 'Poppins';
+	font-weight: bold;
+	height: 250px;
+	user-select: none;
+}
+
+.headerSpan {
+	font-size: 105px;
+	color: red;
+}
+
+.bigCircle {
+	position: absolute;
+	margin-top: -150px;
+	margin-left: 1070px;
+	width: 854px;
+	height: auto;
+	user-select: none;
+}
+
+.floral {
+	position: absolute;
+	margin-left: 890px;
+	margin-top: -50px;
+	user-select: none;
+	width: 400px;
+	height: 150px;
+}
+
+.starContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.starContainer img {
+	margin-right: 10px;
+	user-select: none;
+}
+
+.paragraph {
+	margin-top: 3rem;
+	margin-left: 8rem;
+	margin-right: 8rem;
+	line-height: 2rem;
+	font-family: 'Poppins';
+	font-size: 18px;
+}
+
+.sVector {
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 1030px;
+	user-select: none;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.orderBtn {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 2rem;
+}
