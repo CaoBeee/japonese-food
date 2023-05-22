@@ -3,6 +3,8 @@
 }
 
 body {
+	margin-left: 60px;
+	margin-right: auto;
 	background-color: #f3ede6;
 	overflow: hidden;
 }
@@ -14,45 +16,27 @@ body > nav {
 
 .scallop {
 	position: absolute;
-	top: 0px;
-	right: -25px;
-	width: 27vw;
+	width: 600px;
 	height: auto;
+	margin-left: 320px;
+	/* margin-top: -95px; */
 }
-.tr-top {
+.topVectorLine {
 	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 31vw;
+	width: 1800px;
 	height: auto;
-	overflow: hidden;
+	margin-top: -300px;
+	margin-left: 850px;
+	z-index: -2;
 }
 
-.tr-bot {
+.botVectorLine {
 	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 41vw;
-	height: auto;
-	overflow-y: hidden;
+	margin-left: -1000px;
+	margin-top: 450px;
+	z-index: -2;
 }
 
-.bl-top {
-	position: absolute;
-	margin-left: -50px;
-	margin-top: -130px;
-	width: 1250px;
-	height: 300px;
-	z-index: -1;
-	overflow: hidden;
-}
-
-.bl-bot {
-	position: absolute;
-	margin-left: -500px;
-	margin-top: -50px;
-	width: 1500px;
-	height: 350px;
-	z-index: -1;
+div > .lineContainer {
 	overflow: hidden;
 }

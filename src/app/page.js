@@ -18,31 +18,33 @@ export default function Page() {
 		/>
 	)
 
-	const paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-		cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+	const paragraph = `Our menu is packed with delicious options that are sure 
+	to satisfy your cravings. Indulge in our expertly crafted sushi rolls or 
+	try our expertly prepared nigiri, featuring the finest cuts of fish and 
+	seafood served atop a bed of perfectly seasoned sushi rice. No matter what 
+	you choose, our Japanese food menu is sure to impress. So why wait?`
 
 	return (
 		<React.Fragment>
 			{faviconLink}
-			<Image
-				src={floralPattern}
-				alt='floral'
-				className={styles.floral}
-			/>
-			<Image
-				src={bigCircle}
-				alt='bigCircle'
-				className={styles.bigCircle}
-			/>
-			<Image
-				src={sVector}
-				alt='S-Vector'
-				className={styles.sVector}
-			/>
 			<div className={styles.container}>
+				<Image
+					src={floralPattern}
+					alt='floral'
+					className={styles.floral}
+				/>
+				<Image
+					src={bigCircle}
+					alt='bigCircle'
+					className={styles.bigCircle}
+				/>
+				<Image
+					src={sVector}
+					alt='S-Vector'
+					className={styles.sVector}
+				/>
+			</div>
+			<main className={styles.mainContainer}>
 				<h1 className={styles.header}>
 					How about
 					<br />
@@ -69,7 +71,7 @@ export default function Page() {
 				</div>
 				<p className={styles.paragraph}>{paragraph}</p>
 				<button className={styles.orderBtn}>Order now</button>
-			</div>
+			</main>
 		</React.Fragment>
 	)
 }
