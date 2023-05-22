@@ -143,6 +143,7 @@
     width: 100%;
     height:fit-content;
     transition:inherit;
+    user-select:none;
 }
 
     .hover_container p {
@@ -153,6 +154,7 @@
         margin-right: 12px;
         font-style: italic;
         transition: inherit;
+        user-select:none;
     }
 
     .hover_container button {
@@ -167,6 +169,7 @@
         border-radius: 0px 0px 25px 25px;
         border-color: rgba(0,0,0,0);
         transition: inherit;
+        user-select:none;
     }
 
 .item_added_notif {
@@ -177,4 +180,5 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     transition: inherit;
+    user-select:none;
 }
