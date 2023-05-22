@@ -1,0 +1,70 @@
+.gallery_container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 72px;
+    gap: 30px;
+    width: 550px;
+}
+
+.item_container{
+    position: relative;
+    display:inherit;
+    width: 147px;
+    height: 147px;
+}
+
+.item_container img{
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.item_container:hover>.hover_container{
+    filter: opacity(1);
+}
+
+.hover_container {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(0,0,0, 0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    filter: opacity(0);
+    transition: all 0.3s ease-in;
+}
+
+.hover_container h1{
+    font-family: "Poppins";
+    font-size: 14px;
+    color: white;
+    margin-left:2px;
+    margin-right:2px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    height:fit-content;
+}
+
+.hover_container p{
+    font-family:"Poppins";
+    font-size: 10px;
+    color:white;
+    margin-left: 12px;
+    margin-right:12px;
+    font-style:italic;
+}
+
+    .hover_container button {
+        color: white;
+        font-family: 'Poppins';
+        background: #ED5B55;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 35px;
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+        border-color: rgba(0,0,0,0);
+    }
