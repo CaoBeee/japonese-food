@@ -4,8 +4,8 @@ import Image from 'next/image'
 import NavigationBar from '@/components/navigationBar'
 import scallopPattern from '/public/img/home/BlueScallopPattern.svg'
 import tlb from '/public/img/home/TopRightCorner-LeftLine.svg'
-import tlr from '/public/img/home/TopRightCorner-RightLine.svg'
-import blu from '/public/img/home/BottomLeftCorner-EndingUp.svg'
+import topVectorLine from '/public/img/home/TopVectorLines.svg'
+import botVectorLine from '/public/img/home/BottomVectorLines.svg'
 import bld from '/public/img/home/BottomLeftCorner-EndingDown.svg'
 
 export const metadata = {
@@ -24,28 +24,26 @@ export default function RootLayout({ children }) {
 					alt='scallop pattern'
 					className='scallop'
 				/>
-				<Image
-					src={tlr}
-					alt=''
-					className='tr-top'
-				/>
-				<Image
-					src={tlb}
-					alt=''
-					className='tr-bot'
-				/>
+				<section>
+					<div className='lineContainer'>
+						<Image
+							src={topVectorLine}
+							alt=''
+							className='topVectorLine'
+						/>
+					</div>{' '}
+					<div>{children}</div>
+				</section>
 
-				<div>{children}</div>
-				<Image
-					src={blu}
-					alt=''
-					className='bl-top'
-				/>
-				<Image
-					src={bld}
-					alt=''
-					className='bl-bot'
-				/>
+				<section>
+					<div className='lineContainer'>
+						<Image
+							src={botVectorLine}
+							alt=''
+							className='botVectorLine'
+						/>
+					</div>
+				</section>
 			</body>
 		</html>
 	)
