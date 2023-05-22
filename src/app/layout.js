@@ -3,10 +3,8 @@ import JaponLogo from '@/components/japonLogo'
 import Image from 'next/image'
 import NavigationBar from '@/components/navigationBar'
 import scallopPattern from '/public/img/home/BlueScallopPattern.svg'
-import tlb from '/public/img/home/TopRightCorner-LeftLine.svg'
 import topVectorLine from '/public/img/home/TopVectorLines.svg'
 import botVectorLine from '/public/img/home/BottomVectorLines.svg'
-import bld from '/public/img/home/BottomLeftCorner-EndingDown.svg'
 
 export const metadata = {
 	title: 'Next.js',

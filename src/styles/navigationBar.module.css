@@ -6,8 +6,6 @@
 .navBar {
 	display: flex;
 	justify-items: center;
-	margin-left: 175px;
-	margin-top: 4rem;
 }
 
 .navBar li {
