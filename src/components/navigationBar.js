@@ -7,9 +7,7 @@ import styles from '@/styles/navigationBar.module.css'
 
 const NavigationBar = () => {
 	const [isActive, setActive] = useState('/')
-	const handleClick = link => () => {
-		setActive(link)
-	}
+	const handleClick = link => () => setActive(link)
 
 	const handleOrderClick = link => {
 		setActive(link)
