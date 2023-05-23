@@ -9,22 +9,28 @@ body {
 	overflow: hidden;
 }
 
+body > section {
+	margin-top: 39px;
+}
+
 body > header,
 body > nav {
 	display: inline-flex;
+	position: relative;
 }
 
 .scallop {
 	position: absolute;
+	float: right;
 	width: 600px;
 	height: auto;
-	margin-left: 350px;
+	margin-left: 260px;
 }
 .topVectorLine {
 	position: absolute;
-	width: 1800px;
+	width: 1900px;
 	height: auto;
-	margin-top: -300px;
+	margin-top: -400px;
 	margin-left: 850px;
 	z-index: -2;
 }
@@ -32,10 +38,6 @@ body > nav {
 .botVectorLine {
 	position: absolute;
 	margin-left: -1000px;
-	margin-top: 450px;
+	margin-top: 400px;
 	z-index: -2;
-}
-
-div > .lineContainer {
-	overflow: hidden;
 }

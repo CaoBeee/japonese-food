@@ -1,6 +1,5 @@
 ﻿.container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 39px;
-    margin-left: 60px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 60px;
 }

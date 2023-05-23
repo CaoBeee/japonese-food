@@ -9,7 +9,7 @@ import redStar from '/public/img/home/RedStar.svg'
 import blueStar from '/public/img/home/BlueStar.svg'
 import sVector from '/public/img/home/S-ShapeVector.svg'
 
-export default function Page() {
+export default function Home() {
 	const faviconLink = (
 		<link
 			rel='shortcut icon'
