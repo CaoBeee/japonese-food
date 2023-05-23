@@ -6,14 +6,15 @@
 }
 
 .mainContainer {
+	margin-left: 3rem;
 	float: left;
-	margin-top: 133px;
+	margin-top: 97px;
 	justify-content: left;
 }
 
 .container {
 	position: absolute;
-	margin-top: 150px;
+	margin-top: 114px;
 	margin-left: -100px;
 }
 
@@ -24,7 +25,7 @@
 .header {
 	justify-content: center;
 	text-align: center;
-	font-size: 68px;
+	font-size: 80px;
 	text-align: center;
 	line-height: 5rem;
 	font-family: 'Poppins-Bold';
@@ -33,7 +34,7 @@
 }
 
 .headerSpan {
-	font-size: 68px;
+	font-size: 80px;
 	color: #ed5b55;
 }
 
@@ -43,8 +44,8 @@
 
 .bigCircle {
 	position: absolute;
-	margin-top: -210px;
-	margin-left: 800px;
+	margin-top: -250px;
+	margin-left: 900px;
 	width: 950px;
 	height: auto;
 	user-select: none;
@@ -54,11 +55,9 @@
 
 .floral {
 	position: absolute;
-	margin-left: 680px;
+	margin-left: 920px;
 	margin-top: -100px;
 	user-select: none;
-	width: 300px;
-	height: 150px;
 }
 
 .starContainer {
@@ -77,22 +76,22 @@
 
 .paragraph {
 	text-align: center;
-	width: 35rem;
+	width: 40rem;
 	height: 7rem;
 	margin-top: 48px;
 	line-height: 30.1px;
 	font-family: 'Poppins';
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 400;
-	margin-bottom: 55px;
+	margin-bottom: 5rem;
 }
 
 .sVector {
 	width: 160px;
 	height: auto;
 	position: absolute;
-	margin-top: 320px;
-	margin-left: 720px;
+	margin-top: 300px;
+	margin-left: 825px;
 	user-select: none;
 	z-index: 0;
 }
