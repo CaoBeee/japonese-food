@@ -20,11 +20,12 @@ body > nav {
 }
 
 .scallop {
+	display: flex;
 	position: absolute;
-	float: right;
 	width: 600px;
 	height: auto;
-	margin-left: 260px;
+	margin-left: 1300px;
+	margin-top: -145px;
 }
 .topVectorLine {
 	position: absolute;

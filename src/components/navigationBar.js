@@ -6,13 +6,17 @@ import { setCookie } from 'cookies-next'
 import styles from '@/styles/navigationBar.module.css'
 
 const NavigationBar = () => {
-	const [isActive, setActive] = useState()
+	const [isActive, setActive] = useState('/')
 	const handleClick = link => () => {
 		setActive(link)
 	}
 
 	const handleOrderClick = link => {
 		setActive(link)
+		saveMenu()
+	}
+
+	const saveMenu = () => () => {
 		setCookie('menu_state', 1)
 		window.dispatchEvent(new Event('cookie'))
 	}

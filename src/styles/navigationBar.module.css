@@ -31,7 +31,9 @@
 
 .navBar a:hover {
 	color: #ed5b55;
-	box-shadow: 0 0 0 2.5px #ed5b55; /* Example box-shadow */
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 0 0 0 2.5px #ed5b55;
 	font-size: 1.25rem;
 	font-weight: bold;
 	text-align: center;
@@ -49,7 +51,7 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	color: #ed5b55;
-	box-shadow: 0 0 0 2.5px #ed5b55; /* Example box-shadow */
+	box-shadow: 0 0 0 2.5px #ed5b55;
 	border-radius: 0.3125rem;
 	font-size: 1.25rem;
 	font-weight: bold;
