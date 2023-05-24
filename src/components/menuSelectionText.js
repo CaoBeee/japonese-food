@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MenuText(props) {
 	return (
-		<p
+		<h1
 			style={{
 				textDecoration: props.textDecoration,
 				color: props.color,
@@ -14,6 +14,6 @@ export default function MenuText(props) {
 			onMouseLeave={props.onMouseLeave}
 		>
 			{props.title}
-		</p>
+		</h1>
 	)
 }

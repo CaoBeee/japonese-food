@@ -6,7 +6,7 @@
 	line-height: 39px;
 }
 
-.container p {
+.container h1 {
 	font-family: 'Poppins';
 	font-weight: bold;
 	text-underline-offset: 10px;
@@ -16,6 +16,6 @@
 	white-space:nowrap;
 }
 
-.container p:hover {
+.container h1:hover {
 	cursor: pointer;
 }

@@ -13,7 +13,7 @@ const NavigationBar = () => {
 
 	const handleOrderClick = link => {
 		setActive(link)
-		setCookie('menu_state', 1)
+		setCookie('menu_selection_state', 1)
 		window.dispatchEvent(new Event('cookie'))
 	}
 
