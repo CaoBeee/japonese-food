@@ -15,33 +15,26 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<JaponLogo />
-				<NavigationBar />
+				<div className='header'>
+					<JaponLogo />
+					<NavigationBar />
+				</div>
 				<Image
 					src={scallopPattern}
 					alt='scallop pattern'
 					className='scallop'
 				/>
-				<section>
-					<div className='lineContainer'>
-						<Image
-							src={topVectorLine}
-							alt=''
-							className='topVectorLine'
-						/>
-					</div>{' '}
-					<div>{children}</div>
-				</section>
-
-				<section>
-					<div className='lineContainer'>
-						<Image
-							src={botVectorLine}
-							alt=''
-							className='botVectorLine'
-						/>
-					</div>
-				</section>
+				<Image
+					src={topVectorLine}
+					alt=''
+					className='topVectorLine'
+				/>
+				<div>{children}</div>
+				{/* <Image
+					src={botVectorLine}
+					alt=''
+					className='botVectorLine'
+				/> */}
 			</body>
 		</html>
 	)

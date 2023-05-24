@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('/public/fonts/Poppins-Regular.ttf');
+	font-family: 'Poppins-Bold';
+	src: url('../../public/fonts/Poppins-Bold.ttf');
+}
+
+.container {
+	display: flex;
+	margin-left: 60px;
+	height: 814px;
+	margin-right: -940px;
+}
+
+.headerContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1900px;
+	height: inherit;
+	margin-right: 15px;
+}
+
+.sushi {
+	position: relative;
+	width: 3700px;
+	height: 1500px;
+}
+
+.header,
+.header > span {
+	font-size: 44px;
+	text-align: center;
+	line-height: 5rem;
+	font-family: 'Poppins-Bold';
+	user-select: none;
+}
+
+.headerSpan {
+	color: #ed5b55;
+}
+
+.addressBtn {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	width: 500px;
+	height: 40px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	background: #ffffff;
+}
+
+.addressBtn > input {
+	display: flex;
+	justify-items: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	border-style: none;
+	margin-left: 10px;
+	width: 415px;
+}
+
+.addressBtn input:focus {
+	outline: none;
+}
+
+.addressBtn input:focus::placeholder {
+	color: transparent;
+}
+
+.addressIcon {
+	margin-left: 10px;
+}
+
+.header > p {
+	margin-top: 50px;
+	font-size: 16px;
+	line-height: 2rem;
+	margin-bottom: 25px;
+	font-weight: 300;
+}
+
+.menuBtn {
+	width: 176px;
+	padding: 10px 20px;
+	gap: 10px;
+	height: auto;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 2rem;
+	color: #ffffff;
+	background-color: #ed5b55;
+	font-family: 'Poppins';
+	font-size: 26px;
+	border: none;
+	border-radius: 10px;
+	font-weight: 500;
+	box-shadow: 0px 0px 10px 1px #ed5b55;
+}
+
+.menuBtn:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #ed5b55;
+	box-shadow: 0px 0px 10px 1px #ed5b55;
+	border-radius: 10px;
+}
+
+.menuBtn:active {
+	background: #465e68;
+	box-shadow: 0px 0px 10px 1px rgba(70, 94, 104, 0.5);
+	border-radius: 10px;
+	/* margin-bottom: 5rem; */
+}

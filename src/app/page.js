@@ -28,50 +28,53 @@ export default function Home() {
 		<React.Fragment>
 			{faviconLink}
 			<div className={styles.container}>
-				<Image
-					src={floralPattern}
-					alt='floral'
-					className={styles.floral}
-				/>
-				<Image
-					src={bigCircle}
-					alt='bigCircle'
-					className={styles.bigCircle}
-				/>
-				<Image
-					src={sVector}
-					alt='S-Vector'
-					className={styles.sVector}
-				/>
-			</div>
-			<main className={styles.mainContainer}>
-				<h1 className={styles.header}>
-					How about
-					<br />
-					<span className={styles.headerSpan}> Japanese food?</span>
-				</h1>
-
-				<div className={styles.starContainer}>
+				<div className={styles.headerContainer}>
+					<h1 className={styles.header}>
+						How about
+						<br />
+						<span className={styles.headerSpan}> Japanese food?</span>
+					</h1>
+					<div className={styles.starContainer}>
+						<Image
+							src={redStar}
+							alt='floral'
+						/>
+						<Image
+							src={blueStar}
+							alt='bigCircle'
+						/>
+						<Image
+							src={redStar}
+							alt='floral'
+						/>
+						<Image
+							src={redStar}
+							alt='floral'
+						/>
+					</div>
+					<div>
+						<p className={styles.paragraph}>{paragraph}</p>
+						<button className={styles.orderBtn}>Order now</button>
+					</div>
+				</div>
+				<div className={styles.vectorContainer}>
 					<Image
-						src={redStar}
+						src={floralPattern}
 						alt='floral'
+						className={styles.floral}
 					/>
 					<Image
-						src={blueStar}
+						src={sVector}
+						alt='S-Vector'
+						className={styles.sVector}
+					/>
+					<Image
+						src={bigCircle}
 						alt='bigCircle'
-					/>
-					<Image
-						src={redStar}
-						alt='floral'
-					/>
-					<Image
-						src={redStar}
-						alt='floral'
+						className={styles.bigCircle}
 					/>
 				</div>
-				<p className={styles.paragraph}>{paragraph}</p>
-				<button className={styles.orderBtn}>Order now</button>
-			</main>
+			</div>
 		</React.Fragment>
 	)
 }

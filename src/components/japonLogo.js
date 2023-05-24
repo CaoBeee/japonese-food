@@ -9,17 +9,19 @@ import vectorBG from '/public/img/logo/Vector.svg'
 
 export default function JaponLogo() {
 	return (
-		<header
-			className={styles.container}
+		<div
+			className={styles.logoContainer}
 			style={{
 				background: `url(${vectorBG.src})`,
 				backgroundRepeat: 'no-repeat',
 				backgroundSize: 'contain',
 			}}
 		>
-			<Link href='/'>
+			<Link
+				href='/'
+				className={styles.logo}
+			>
 				<Image
-					className={styles.logo}
 					src={logo}
 					alt='Japon Logo'
 					height={105}
@@ -27,6 +29,6 @@ export default function JaponLogo() {
 					priority
 				/>
 			</Link>
-		</header>
+		</div>
 	)
 }
