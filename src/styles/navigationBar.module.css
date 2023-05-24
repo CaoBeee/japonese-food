@@ -7,12 +7,11 @@
 	margin-left: -100px;
 	margin-top: 60px;
 	display: flex;
-	z-index: 3;
 }
 
 .navBar li {
 	list-style: none;
-	margin-right: 5rem;
+	margin-right: 2em;
 	font-family: 'Poppins-Medium';
 }
 
