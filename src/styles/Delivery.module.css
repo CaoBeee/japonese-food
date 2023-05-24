@@ -7,7 +7,7 @@
 
 .container {
 	margin-top: -50px;
-	width: 2500px;
+	width: 1900px;
 	height: 770px;
 	align-items: center;
 	display: flex;
@@ -25,9 +25,9 @@
 	width: 700px;
 	justify-content: center;
 	text-align: center;
-	font-size: 63px;
+	font-size: 36px;
 	text-align: center;
-	line-height: 6rem;
+	line-height: 4rem;
 	font-family: 'Poppins-Bold';
 	font-weight: 700;
 	user-select: none;

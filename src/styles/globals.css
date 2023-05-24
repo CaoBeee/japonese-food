@@ -38,7 +38,7 @@ body > nav {
 
 .botVectorLine {
 	position: absolute;
-	margin-left: -1000px;
-	margin-top: 400px;
-	z-index: -2;
+	margin-top: -410px;
+	margin-left: -390px;
+	z-index: -3;
 }

@@ -22,26 +22,17 @@ export default function RootLayout({ children }) {
 					alt='scallop pattern'
 					className='scallop'
 				/>
-				<section>
-					<div className='lineContainer'>
-						<Image
-							src={topVectorLine}
-							alt=''
-							className='topVectorLine'
-						/>
-					</div>{' '}
-					<div>{children}</div>
-				</section>
-
-				<section>
-					<div className='lineContainer'>
-						<Image
-							src={botVectorLine}
-							alt=''
-							className='botVectorLine'
-						/>
-					</div>
-				</section>
+				<Image
+					src={topVectorLine}
+					alt=''
+					className='topVectorLine'
+				/>
+				<div>{children}</div>
+				<Image
+					src={botVectorLine}
+					alt=''
+					className='botVectorLine'
+				/>
 			</body>
 		</html>
 	)
