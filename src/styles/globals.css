@@ -3,28 +3,21 @@
 }
 
 body {
-	margin-left: 60px;
 	margin-right: auto;
 	background-color: #f3ede6;
 	overflow: hidden;
 }
 
-body > section {
-	margin-top: 39px;
-}
-
-body > header,
-body > nav {
-	display: inline-flex;
-	position: relative;
+.header {
+	display: flex;
 }
 
 .scallop {
 	display: flex;
 	position: absolute;
-	width: 600px;
+	width: 500px;
 	height: auto;
-	margin-left: 1300px;
+	margin-left: 1420px;
 	margin-top: -145px;
 }
 .topVectorLine {
@@ -37,7 +30,8 @@ body > nav {
 }
 
 .botVectorLine {
-	position: absolute;
+	border: red solid;
+	position: relative;
 	margin-top: -410px;
 	margin-left: -390px;
 	z-index: -3;

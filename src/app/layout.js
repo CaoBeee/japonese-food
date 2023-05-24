@@ -15,8 +15,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<JaponLogo />
-				<NavigationBar />
+				<div className='header'>
+					<JaponLogo />
+					<NavigationBar />
+				</div>
 				<Image
 					src={scallopPattern}
 					alt='scallop pattern'
@@ -28,11 +30,11 @@ export default function RootLayout({ children }) {
 					className='topVectorLine'
 				/>
 				<div>{children}</div>
-				<Image
+				{/* <Image
 					src={botVectorLine}
 					alt=''
 					className='botVectorLine'
-				/>
+				/> */}
 			</body>
 		</html>
 	)

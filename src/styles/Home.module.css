@@ -5,24 +5,24 @@
 	src: url('../../public/fonts/Poppins-Bold.ttf');
 }
 
-.mainContainer {
+.container {
+	align-items: center;
 	display: flex;
-	margin-top: 100px;
+	margin-left: 60px;
+	height: inherit;
 }
 
 .headerContainer {
 	width: 690px;
+	height: inherit;
 }
 
 .header,
 .header > span {
-	justify-content: center;
-	text-align: center;
 	font-family: 'Poppins-Bold';
 	font-size: 80px;
-	font-weight: 700;
 	text-align: center;
-	line-height: 5rem;
+	line-height: 4.5rem;
 	user-select: none;
 }
 
@@ -32,7 +32,9 @@
 
 .vectorContainer {
 	display: flex;
-	width: 1140px;
+	width: 1170px;
+	height: inherit;
+	margin-top: 5rem;
 }
 
 .bigCircle {
@@ -47,8 +49,10 @@
 
 .floral {
 	position: absolute;
-	margin-left: 120px;
-	margin-top: -80px;
+	width: 130px;
+	height: auto;
+	margin-left: 40px;
+	margin-top: -30px;
 	user-select: none;
 }
 
@@ -56,8 +60,8 @@
 	position: absolute;
 	width: 180px;
 	height: auto;
-	margin-top: 300px;
-	margin-left: 3px;
+	margin-top: 360px;
+	margin-left: 20px;
 	user-select: none;
 	z-index: 0;
 }
@@ -79,21 +83,17 @@
 .paragraph {
 	margin: auto;
 	text-align: center;
-	width: 40rem;
-	height: 7rem;
 	margin-top: 48px;
 	line-height: 30.1px;
 	font-family: 'Poppins';
-	font-size: 14.5px;
+	font-size: 16px;
 	font-weight: 400;
-	margin-bottom: 4rem;
+	margin-bottom: 55px;
 }
 
 .orderBtn {
-	width: 176px;
 	padding: 10px 20px;
 	gap: 10px;
-	height: auto;
 	display: flex;
 	text-align: center;
 	justify-content: center;

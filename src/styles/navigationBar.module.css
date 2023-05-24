@@ -4,13 +4,15 @@
 }
 
 .navBar {
+	margin-left: -100px;
+	margin-top: 60px;
 	display: flex;
-	justify-items: center;
+	z-index: 3;
 }
 
 .navBar li {
 	list-style: none;
-	margin-right: 2rem;
+	margin-right: 5rem;
 	font-family: 'Poppins-Medium';
 }
 

@@ -9,14 +9,14 @@ export default function Delivery() {
 	return (
 		<React.Fragment>
 			<div className={styles.container}>
-				<div className={styles.header}>
-					<h1>
-						You order,
-						<br />
-						<span className={styles.headerSpan}> we deliver.</span>
-						<br />
-					</h1>
-					<div>
+				<div className={styles.headerContainer}>
+					<div className={styles.header}>
+						<h1>
+							You order,
+							<br />
+							<span className={styles.headerSpan}> we deliver.</span>
+							<br />
+						</h1>
 						<div className={styles.addressBtn}>
 							<Image
 								className={styles.addressIcon}
@@ -28,14 +28,13 @@ export default function Delivery() {
 								type='text'
 							/>
 							<Image
-								className={styles.arrowIcon}
 								src={arrow}
 								alt='Icon'
 							/>
 						</div>
+						<p>Not ready to order yet? Take a look at our menu for something delicious.</p>
+						<button className={styles.menuBtn}>Menu</button>
 					</div>
-					<p>Not ready to order yet? Take a look at our menu for something delicious.</p>
-					<button className={styles.menuBtn}>Menu</button>
 				</div>
 				<div
 					className={styles.sushi}

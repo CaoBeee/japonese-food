@@ -27,14 +27,13 @@ export default function Home() {
 	return (
 		<React.Fragment>
 			{faviconLink}
-			<div className={styles.mainContainer}>
+			<div className={styles.container}>
 				<div className={styles.headerContainer}>
 					<h1 className={styles.header}>
 						How about
 						<br />
 						<span className={styles.headerSpan}> Japanese food?</span>
 					</h1>
-
 					<div className={styles.starContainer}>
 						<Image
 							src={redStar}
@@ -53,8 +52,10 @@ export default function Home() {
 							alt='floral'
 						/>
 					</div>
-					<p className={styles.paragraph}>{paragraph}</p>
-					<button className={styles.orderBtn}>Order now</button>
+					<div>
+						<p className={styles.paragraph}>{paragraph}</p>
+						<button className={styles.orderBtn}>Order now</button>
+					</div>
 				</div>
 				<div className={styles.vectorContainer}>
 					<Image
