@@ -1,30 +1,22 @@
 'use client'
-
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { setCookie } from 'cookies-next'
 import styles from '@/styles/navigationBar.module.css'
+import { usePathname } from 'next/navigation'
 
 const NavigationBar = () => {
-	const [isActive, setActive] = useState()
-	const handleClick = link => () => {
-		setActive(link)
-	}
-
-	const handleOrderClick = link => {
-		setActive(link)
+	const saveMenu = () => {
 		setCookie('menu_selection_state', 1)
 		window.dispatchEvent(new Event('cookie'))
 	}
-
 	return (
 		<nav>
 			<ul className={styles.navBar}>
 				<li>
 					<Link
-						className={isActive === '/' ? styles.active : ''}
+						className={usePathname() === '/' ? styles.active : ''}
 						href='/'
-						onClick={handleClick('/')}
 					>
 						Home
 					</Link>
@@ -32,9 +24,8 @@ const NavigationBar = () => {
 				<li className={styles.separator}>|</li>
 				<li>
 					<Link
-						className={isActive === '/Delivery' ? styles.active : ''}
+						className={usePathname() === '/Delivery' ? styles.active : ''}
 						href='/Delivery'
-						onClick={handleClick('/Delivery')}
 					>
 						Delivery
 					</Link>
@@ -42,9 +33,8 @@ const NavigationBar = () => {
 				<li className={styles.separator}>|</li>
 				<li>
 					<Link
-						className={isActive === '/Contact' ? styles.active : ''}
+						className={usePathname() === '/Contact' ? styles.active : ''}
 						href='/Contact'
-						onClick={handleClick('/Contact')}
 					>
 						Contact
 					</Link>
@@ -52,10 +42,10 @@ const NavigationBar = () => {
 				<li className={styles.separator}>|</li>
 				<li>
 					<Link
-						className={isActive === '/Order' ? styles.active : ''}
+						className={usePathname() === '/Order' ? styles.active : ''}
 						href='/Order'
 						onClick={() => {
-							handleOrderClick('/Order')
+							saveMenu()
 						}}
 					>
 						Order
@@ -64,9 +54,8 @@ const NavigationBar = () => {
 				<li className={styles.separator}>|</li>
 				<li>
 					<Link
-						className={isActive === '/About' ? styles.active : ''}
+						className={usePathname() === '/About' ? styles.active : ''}
 						href='/About'
-						onClick={handleClick('/About')}
 					>
 						About
 					</Link>

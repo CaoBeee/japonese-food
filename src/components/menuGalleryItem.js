@@ -33,7 +33,7 @@ export default function MenuItem({ menuId, title, menuImage, description, initia
                 setshowingAddNotif(false)
             }, 2000);
 
-            return () => { clearTimeout(timeOut ); }
+            return () => { clearTimeout(timeOut); }
         }
     };
 
@@ -42,7 +42,7 @@ export default function MenuItem({ menuId, title, menuImage, description, initia
             localStorage.setItem(`menu-${menuId}`, 'In Cart');
             const timeOut = setTimeout(() => {
                 setButtonText('In Cart')
-            }, 1250);
+            }, 350);
             return () => { clearTimeout(timeOut) };
 
         } else {
