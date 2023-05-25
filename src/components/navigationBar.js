@@ -6,8 +6,8 @@ import styles from '@/styles/navigationBar.module.css'
 import { usePathname } from 'next/navigation'
 
 const NavigationBar = () => {
-	const saveMenu = () => () => {
-		setCookie('menu_state', 1)
+	const saveMenu = () => {
+		setCookie('menu_selection_state', 1)
 		window.dispatchEvent(new Event('cookie'))
 	}
 	return (

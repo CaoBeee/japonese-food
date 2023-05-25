@@ -6,16 +6,22 @@
 	line-height: 39px;
 }
 
-.container p {
-	font-family: 'Poppins';
-	font-weight: bold;
-	text-underline-offset: 10px;
-	padding-left: 8px;
-	padding-right: 8px;
-	width: fit-content;
-	white-space:nowrap;
-}
+	.container h1 {
+		display:flex;
+		font-family: 'Poppins-medium';
+		font-weight: bold;
+		text-underline-offset: 10px;
+		padding-left: 8px;
+		padding-right: 8px;
+		width: fit-content;
+		white-space: nowrap;
+		transition: transform linear 0.25s;
+	}
 
-.container p:hover {
+	.container h1:hover{
+		transform:scale(1.1);
+	}
+
+.container h1:hover {
 	cursor: pointer;
 }
