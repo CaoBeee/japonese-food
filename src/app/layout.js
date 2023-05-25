@@ -5,6 +5,7 @@ import NavigationBar from '@/components/navigationBar'
 import scallopPattern from '/public/img/home/BlueScallopPattern.svg'
 import topVectorLine from '/public/img/home/TopVectorLines.svg'
 import botVectorLine from '/public/img/home/BottomVectorLines.svg'
+import { CartProvider } from '../components/cartContext'
 
 export const metadata = {
 	title: 'Next.js',
@@ -30,7 +31,9 @@ export default function RootLayout({ children }) {
 							className='topVectorLine'
 						/>
 					</div>{' '}
-					<div>{children}</div>
+					<CartProvider>
+						<div>{children}</div>
+					</CartProvider>
 				</section>
 
 				<section>
@@ -41,7 +44,7 @@ export default function RootLayout({ children }) {
 							className='botVectorLine'
 						/>
 					</div>
-				</section>
+					</section>
 			</body>
 		</html>
 	)

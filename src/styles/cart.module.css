@@ -14,7 +14,7 @@
         color: black;
         width: 95%;
         height: 31px;
-        font-family: 'Poppins';
+        font-family: 'Poppins-medium';
         font-style: normal;
         font-size: 20px;
         line-height: 31px;
@@ -33,7 +33,7 @@
 .empty_text {
     width: 100%;
     height: 21px;
-    font-family: 'Poppins';
+    font-family: 'Poppins-medium';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -43,13 +43,12 @@
     text-align: center;
     color: rgba(0, 0, 0, 0.4);
     margin-top: 10px;
-
 }
 
 .item_container{
     display:flex;
     margin-left: 10px;
-    margin-top:20px;
+    margin-top:18px;
 }
 
 .item_image {
@@ -59,6 +58,7 @@
     height: 70px;
     width: 70px;
     margin-right: 10px;
+    object-fit:cover;
 }
 
 .item_info_container{
@@ -70,10 +70,18 @@
     .item_info_container h3 {
         width: 97px;
         height: fit-content;
-        font-family: 'Poppins';
+        font-family: 'Poppins-medium';
         font-style: normal;
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .item_info_container p {
+        font-family: 'Poppins-medium';
+        font-style: italic;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
     }
 
 .quantity_buttons_container{
@@ -82,16 +90,16 @@
     width: fit-content;
 }
 
-    .quantity_buttons_container text {
-        font-family: 'Poppins';
+    .quantity_buttons_container p {
+        font-family: 'Poppins-medium';
         font-style: normal;
         width: 18px;
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
         margin-left: 8px;
         margin-right: 8px;
-        margin-bottom:auto;
-        vertical-align:top;
+        margin-bottom: auto;
+        vertical-align: top;
     }
 
     .quantity_buttons_container button {
@@ -106,16 +114,130 @@
         padding:0px;
     }
 
+    .quantity_buttons_container button:hover{
+        cursor:pointer;
+    }
+
+        .quantity_buttons_container button img {
+            height: 90%;
+            width: 90%;
+            filter: invert(100%) sepia(0%) saturate(175%) hue-rotate(69deg) brightness(113%) contrast(87%);
+        }
+
 .price {
-    display:flex;
+    display: flex;
     height: 18px;
-    font-family: 'Poppins';
+    font-family: 'Poppins-medium';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
-    /* identical to box height */
-    margin-right:0;
-    margin-left:auto;
+    margin-right: 0;
+    margin-left: 6px;
     text-align: right;
 }
+
+.checkout_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_items_container{
+    margin-top: 8px;
+    display:flex;
+    flex-direction:column;
+    width:fit-content;
+    max-height:360px;
+    padding-right:8px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.cart_items_container {
+    scrollbar-width: thin;
+    scrollbar-color: #ed5b55 #ffffff;
+}
+
+.cart_items_container::-webkit-scrollbar {
+    width: 12px;
+}
+
+    .cart_items_container::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    .cart_items_container::-webkit-scrollbar-thumb {
+        background-color: #ed5b55;
+        border-radius: 12px;
+        border: 3px solid #ffffff;
+    }
+
+.total_container {
+    display:flex;
+    flex-direction:row;
+    margin-top: 20px;
+}
+
+.total_text {
+    height: 18px;
+    width: fit-content;
+    font-family: 'Poppins-medium';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.total_price {
+    height: 18px;
+    width: fit-content;
+    font-family: 'Poppins-medium';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.clear_button {
+    display: flex;
+    height: 30px;
+    width: 100px;
+    padding:0;
+    background-color: #ed5b55;
+    margin-right:auto;
+    margin-left:0;
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius:16px;
+    border:none;
+    transition: all ease-in-out 0.5s;
+}
+
+.clear_button:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+    filter:brightness(0.8);
+}
+
+    .clear_button img {
+        height: 18px;
+        width: 18px;
+        margin-top:2px;
+        margin:auto;
+        margin-right:0;
+        filter: invert(100%) sepia(0%) saturate(175%) hue-rotate(69deg) brightness(113%) contrast(87%);
+    }
+
+    .clear_button p{
+        color:white;
+        text-align:center;
+        margin:auto;
+        margin-left:4px;
+    }
