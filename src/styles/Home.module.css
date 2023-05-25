@@ -91,6 +91,10 @@
 	margin-bottom: 55px;
 }
 
+.orderLink {
+	text-decoration: none;
+}
+
 .orderBtn {
 	padding: 10px 20px;
 	gap: 10px;

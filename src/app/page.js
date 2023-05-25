@@ -1,4 +1,5 @@
-// Home Page
+'use client'
+
 import React from 'react'
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
@@ -8,8 +9,9 @@ import bigCircle from '/public/img/home/LargeCircle.svg'
 import redStar from '/public/img/home/RedStar.svg'
 import blueStar from '/public/img/home/BlueStar.svg'
 import sVector from '/public/img/home/S-ShapeVector.svg'
+import Link from 'next/link'
 
-export default function Home() {
+export default function MyApp() {
 	const faviconLink = (
 		<link
 			rel='shortcut icon'
@@ -23,7 +25,6 @@ export default function Home() {
 	try our expertly prepared nigiri, featuring the finest cuts of fish and 
 	seafood served atop a bed of perfectly seasoned sushi rice. No matter what 
 	you choose, our Japanese food menu is sure to impress. So why wait?`
-
 	return (
 		<React.Fragment>
 			{faviconLink}
@@ -54,7 +55,12 @@ export default function Home() {
 					</div>
 					<div>
 						<p className={styles.paragraph}>{paragraph}</p>
-						<button className={styles.orderBtn}>Order now</button>
+						<Link
+							className={styles.orderLink}
+							href='/Order'
+						>
+							<button className={styles.orderBtn}>Order now</button>
+						</Link>
 					</div>
 				</div>
 				<div className={styles.vectorContainer}>
