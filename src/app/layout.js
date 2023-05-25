@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
 					alt='scallop pattern'
 					className='scallop'
 				/>
-				<section>
 					<div className='lineContainer'>
 						<Image
 							src={topVectorLine}
@@ -34,9 +33,7 @@ export default function RootLayout({ children }) {
 					<CartProvider>
 						<div>{children}</div>
 					</CartProvider>
-				</section>
 
-				<section>
 					<div className='lineContainer'>
 						<Image
 							src={botVectorLine}
@@ -44,7 +41,6 @@ export default function RootLayout({ children }) {
 							className='botVectorLine'
 						/>
 					</div>
-					</section>
 			</body>
 		</html>
 	)
