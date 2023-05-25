@@ -4,13 +4,14 @@
 }
 
 .navBar {
+	margin-left: -100px;
+	margin-top: 60px;
 	display: flex;
-	justify-items: center;
 }
 
 .navBar li {
 	list-style: none;
-	margin-right: 2rem;
+	margin-right: 2em;
 	font-family: 'Poppins-Medium';
 }
 
@@ -20,6 +21,8 @@
 }
 
 .navBar a {
+	padding-left: 5px;
+	padding-right: 5px;
 	color: black;
 	text-decoration: none;
 	padding: 0.3125rem;
@@ -28,28 +31,28 @@
 }
 
 .navBar a:hover {
+	color: #ed5b55;
 	padding-left: 10px;
 	padding-right: 10px;
-	color: #ed5b55;
-	border-style: solid;
-	border-color: #ed5b55;
-	border-radius: 0.3125rem;
+	box-shadow: 0 0 0 2.5px #ed5b55;
 	font-size: 1.25rem;
 	font-weight: bold;
 	text-align: center;
+	border-radius: 0.3125rem;
 }
 
 .navBar a:active {
-	color: white;
-	border-color: white;
+	color: #ffffff;
+	box-shadow: 0 0 0 2.5px #ffffff;
 }
 
 .navBar .active {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	color: #ed5b55;
-	border-style: solid;
-	border-color: #ed5b55;
+	box-shadow: 0 0 0 2.5px #ed5b55;
 	border-radius: 0.3125rem;
 	font-size: 1.25rem;
 	font-weight: bold;
@@ -58,4 +61,38 @@
 
 .separator {
 	font-size: 1.375rem;
+}
+
+.orderLink {
+	text-decoration: none;
+}
+
+.orderBtn {
+	padding: 10px 20px;
+	gap: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	color: #ffffff;
+	background-color: #ed5b55;
+	font-family: 'Poppins';
+	font-size: 26px;
+	border: none;
+	border-radius: 10px;
+	font-weight: 500;
+	box-shadow: 0px 0px 10px 1px #ed5b55;
+}
+
+.orderBtn:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #ed5b55;
+	box-shadow: 0px 0px 10px 1px #ed5b55;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.orderBtn:active {
+	background: #465e68;
+	box-shadow: 0px 0px 10px 1px rgba(70, 94, 104, 0.5);
+	border-radius: 10px;
 }

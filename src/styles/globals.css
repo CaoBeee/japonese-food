@@ -8,39 +8,37 @@
 }
 
 body {
-	margin-left: 60px;
 	margin-right: auto;
 	background-color: #f3ede6;
 	overflow: hidden;
 }
 
-body > header,
-body > nav {
-	display: inline-flex;
+.header {
+	display: flex;
 }
 
 .scallop {
+	display: flex;
 	position: absolute;
-	width: 600px;
+	width: 500px;
 	height: auto;
-	margin-left: 350px;
+	margin-left: 1420px;
+	margin-top: -145px;
 }
 .topVectorLine {
 	position: absolute;
-	width: 1800px;
+	width: 1900px;
 	height: auto;
-	margin-top: -300px;
+	margin-top: -400px;
 	margin-left: 850px;
 	z-index: -2;
 }
 
-.botVectorLine {
+.botLineContainer {
 	position: absolute;
-	margin-left: -1000px;
-	margin-top: 450px;
-	z-index: -2;
-}
-
-div > .lineContainer {
-	overflow: hidden;
+	width: 1600px;
+	height: 1600px;
+	margin-top: -380px;
+	margin-left: -280px;
+	z-index: -3;
 }

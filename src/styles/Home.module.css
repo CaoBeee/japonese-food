@@ -5,60 +5,65 @@
 	src: url('../../public/fonts/Poppins-Bold.ttf');
 }
 
-.mainContainer {
-	float: left;
-	margin-top: 133px;
-	justify-content: left;
-}
-
 .container {
-	position: absolute;
-	margin-top: 150px;
-	margin-left: -100px;
+	align-items: center;
+	display: flex;
+	margin-left: 60px;
+	height: inherit;
 }
 
-.container img {
-	overflow: hidden;
+.headerContainer {
+	width: 690px;
+	height: inherit;
 }
 
-.header {
-	justify-content: center;
-	text-align: center;
-	font-size: 68px;
-	text-align: center;
-	line-height: 5rem;
+.header,
+.header > span {
 	font-family: 'Poppins-Bold';
-	font-weight: 700;
+	font-size: 80px;
+	text-align: center;
+	line-height: 4.5rem;
 	user-select: none;
 }
 
 .headerSpan {
-	font-size: 68px;
 	color: #ed5b55;
 }
 
-.container > img {
-	overflow: hidden;
+.vectorContainer {
+	display: flex;
+	width: 1170px;
+	height: inherit;
+	margin-top: 5rem;
 }
 
 .bigCircle {
-	position: absolute;
-	margin-top: -210px;
-	margin-left: 800px;
-	width: 950px;
+	margin-top: -200px;
+	margin-left: 100px;
+	width: 920px;
 	height: auto;
 	user-select: none;
 	overflow: hidden;
-	z-index: -1;
+	z-index: -2;
 }
 
 .floral {
 	position: absolute;
-	margin-left: 680px;
-	margin-top: -100px;
+	width: 130px;
+	height: auto;
+	margin-left: 40px;
+	margin-top: -30px;
 	user-select: none;
-	width: 300px;
-	height: 150px;
+}
+
+.sVector {
+	position: absolute;
+	width: 180px;
+	height: auto;
+	margin-top: 360px;
+	margin-left: 20px;
+	user-select: none;
+	z-index: 0;
 }
 
 .starContainer {
@@ -76,37 +81,27 @@
 }
 
 .paragraph {
+	margin: auto;
 	text-align: center;
-	width: 35rem;
-	height: 7rem;
 	margin-top: 48px;
 	line-height: 30.1px;
 	font-family: 'Poppins';
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: 55px;
 }
 
-.sVector {
-	width: 160px;
-	height: auto;
-	position: absolute;
-	margin-top: 320px;
-	margin-left: 720px;
-	user-select: none;
-	z-index: 0;
+.orderLink {
+	text-decoration: none;
 }
 
 .orderBtn {
-	width: 176px;
 	padding: 10px 20px;
 	gap: 10px;
-	height: auto;
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	margin: auto;
-	margin-top: 2rem;
 	color: #ffffff;
 	background-color: #ed5b55;
 	font-family: 'Poppins';
