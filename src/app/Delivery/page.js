@@ -10,30 +10,32 @@ export default function Delivery() {
 		<React.Fragment>
 			<div className={styles.container}>
 				<div className={styles.headerContainer}>
-					<div className={styles.header}>
-						<h1>
-							You order,
-							<br />
-							<span className={styles.headerSpan}> we deliver.</span>
-							<br />
-						</h1>
-						<div className={styles.addressBtn}>
-							<Image
-								className={styles.addressIcon}
-								src={addressIcon}
-								alt='Icon'
-							/>
-							<input
-								placeholder='Enter delivery address'
-								type='text'
-							/>
-							<Image
-								src={arrow}
-								alt='Icon'
-							/>
+					<div className={styles.leftContainer}>
+						<div className={styles.header}>
+							<h1>
+								You order,
+								<br />
+								<span className={styles.headerSpan}> we deliver.</span>
+								<br />
+							</h1>
+							<div className={styles.addressBtn}>
+								<Image
+									className={styles.addressIcon}
+									src={addressIcon}
+									alt='Icon'
+								/>
+								<input
+									placeholder='Enter delivery address'
+									type='text'
+								/>
+								<Image
+									src={arrow}
+									alt='Icon'
+								/>
+							</div>
+							<p>Not ready to order yet? Take a look at our menu for something delicious.</p>
+							<button className={styles.menuBtn}>Menu</button>
 						</div>
-						<p>Not ready to order yet? Take a look at our menu for something delicious.</p>
-						<button className={styles.menuBtn}>Menu</button>
 					</div>
 				</div>
 				<div

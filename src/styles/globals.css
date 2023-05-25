@@ -29,10 +29,11 @@ body {
 	z-index: -2;
 }
 
-.botVectorLine {
-	border: red solid;
-	position: relative;
-	margin-top: -410px;
-	margin-left: -390px;
+.botLineContainer {
+	position: absolute;
+	width: 1600px;
+	height: 1600px;
+	margin-top: -380px;
+	margin-left: -280px;
 	z-index: -3;
 }
