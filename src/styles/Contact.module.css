@@ -1,0 +1,134 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('/public/fonts/Poppins-Regular.ttf');
+	font-family: 'Poppins-Bold';
+	src: url('../../public/fonts/Poppins-Bold.ttf');
+}
+
+.container {
+	font-family: 'Poppins';
+	justify-content: center;
+	display: flex;
+	height: 806.188px;
+	margin-left: 60px;
+	max-width: 1860px;
+}
+
+.container button {
+	cursor: pointer;
+}
+
+.left {
+	margin-left: -500px;
+	text-align: center;
+	margin-right: 35px;
+}
+
+.header {
+	margin-top: 68px;
+	font-size: 68px;
+	margin-bottom: 62px;
+}
+
+.left img {
+	margin-bottom: 62px;
+}
+
+.left > p {
+	font-family: 'Poppins';
+	margin-bottom: 19px;
+}
+
+.addressContainer {
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	line-height: 37.7px;
+}
+
+.north span,
+.south span {
+	font-family: 'Poppins-Bold';
+	color: #ed5b55;
+}
+
+.addressContainer button {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.addressContainer button:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #ed5b55;
+	box-shadow: 0px 0px 10px 1px #ed5b55;
+}
+
+.addressContainer button:active {
+	background: #465e68;
+	box-shadow: 0px 4px 4px rgba(70, 94, 104, 0.25);
+}
+
+.addressContainer p {
+	font-size: 20px;
+}
+
+.directionBtn {
+	background-color: #ed5b55;
+	box-shadow: 0px 0px 10px 1px #ed5b55;
+	border-radius: 10px;
+	color: #ffffff;
+	line-height: 20px;
+	padding: 13px 34px;
+	border: none;
+	font-family: 'Poppins';
+}
+
+.right {
+	margin-top: 68px;
+	margin-left: 258px;
+}
+
+.contactForm label {
+	margin-bottom: 6px;
+}
+
+.contactForm label,
+.contactForm input,
+.contactForm textarea {
+	border: none;
+	border-radius: 10px;
+	display: block;
+	resize: none;
+}
+
+.contactForm input {
+	width: 418px;
+	height: 40px;
+	margin-bottom: 8px;
+}
+
+.contactForm textarea {
+	width: 418px;
+	height: 136px;
+	margin-bottom: 6px;
+}
+
+.contactForm button {
+	color: #ffffff;
+	background-color: #ed5b55;
+	float: right;
+	border: none;
+	border-radius: 25px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 14px;
+	width: 127px;
+	height: 40px;
+}
+
+.contactForm button:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #ed5b55;
+}
+
+.contactForm button:active {
+	background: #465e68;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
