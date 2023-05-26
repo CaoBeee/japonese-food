@@ -1,8 +1,53 @@
+'use client'
+import React, { useState } from 'react'
 import styles from '@/styles/Contact.module.css'
 import Image from 'next/image'
 import arrow from '/public/img/contact/Arrow.svg'
 
 export default function Contact() {
+	const [submitted, setSubmitted] = useState(false)
+
+	const [formData, setFormData] = useState({
+		fName: '',
+		lName: '',
+		email: '',
+		orderNumber: '',
+		message: '',
+	})
+
+	const handleInputChange = e => {
+		const { name, value } = e.target
+		console.log(e.target)
+		setFormData(prevData => ({ ...prevData, [name]: value }))
+	}
+
+	const handleSubmit = event => {
+		event.preventDefault()
+		const { fName, lName, email, orderNumber, message: helpText } = formData
+		const mailtoLink = `mailto:hello@japonesefood.com?subject=Contact Form Submission&body=First Name: ${encodeURIComponent(
+			fName
+		)}%0D%0ALast Name: ${encodeURIComponent(lName)}%0D%0AEmail: ${encodeURIComponent(
+			email
+		)}%0D%0AOrder Number: ${encodeURIComponent(orderNumber)}%0D%0AHelp Text: ${encodeURIComponent(
+			helpText
+		)}`
+
+		window.open(mailtoLink, '_blank')
+		setSubmitted(true)
+		setFormData({
+			fName: '',
+			lName: '',
+			email: '',
+			orderNumber: '',
+			message: '',
+		})
+	}
+
+	const successMessage = `We appreciate you taking the time to let us know
+	your thoughts and look forward to
+	being in contact with you within 3-5 business days. If you don’t hear from us sooner,
+	feel free to contact us at`
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.left}>
@@ -37,39 +82,61 @@ export default function Contact() {
 				</div>
 			</div>
 			<div className={styles.right}>
-				<form className={styles.contactForm}>
-					<label htmlFor='fName'>First Name</label>
-					<input
-						name='fName'
-						type='text'
-					></input>
-					<label htmlFor='lName'>Last Name</label>
-					<input
-						name='lName'
-						type='text'
-					></input>
-					<label htmlFor='email'>Email Address</label>
-					<input
-						name='email'
-						type='email'
-					></input>
-					<label htmlFor='orderNumber'>Order Number (if applicable)</label>
-					<input
-						name='orderNumber'
-						type='text'
-					></input>
-					<label htmlFor='helpText'>How can we help you?</label>
-					<textarea
-						name='helpText'
-						type='textarea'
-					></textarea>
-					<button
-						className=''
-						type='submit'
+				{!submitted ? (
+					<form
+						className={styles.contactForm}
+						onSubmit={handleSubmit}
 					>
-						Submit
-					</button>
-				</form>
+						<label htmlFor='fName'>First Name</label>
+						<input
+							name='fName'
+							type='text'
+							value={formData.fName}
+							onChange={handleInputChange}
+							required
+						></input>
+						<label htmlFor='lName'>Last Name</label>
+						<input
+							name='lName'
+							type='text'
+							value={formData.lName}
+							onChange={handleInputChange}
+							required
+						></input>
+						<label htmlFor='email'>Email Address</label>
+						<input
+							name='email'
+							type='email'
+							value={formData.email}
+							onChange={handleInputChange}
+							required
+						></input>
+						<label htmlFor='orderNumber'>Order Number (if applicable)</label>
+						<input
+							name='orderNumber'
+							type='text'
+							value={formData.orderNumber}
+							onChange={handleInputChange}
+						></input>
+						<label htmlFor='message'>How can we help you?</label>
+						<textarea
+							name='message'
+							type='textarea'
+							value={formData.message}
+							onChange={handleInputChange}
+							required
+						></textarea>
+						<button type='submit'>Submit</button>
+					</form>
+				) : (
+					<div className={styles.successMessage}>
+						<span>
+							Thanks for submitting <br /> your feedback!
+						</span>
+						<p>{successMessage}</p>
+						<a href='mailto:hello@japonesefood.com'>hello@japonesefood.com.</a>
+					</div>
+				)}
 			</div>
 		</div>
 	)
