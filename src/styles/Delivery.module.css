@@ -15,18 +15,26 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1900px;
+	/* width: 1900px; */
 	height: inherit;
 }
 
 .leftContainer {
 	margin-bottom: 8rem;
+	margin-left: 200px;
+}
+
+.sushiBackgroundContainer {
+	z-index: -1;
+	position: fixed;
+	width: 90vw;
+	height: 90vh;
 }
 
 .sushi {
-	position: relative;
-	width: 3700px;
-	height: 1500px;
+	/* position: relative; */
+	margin-left: 560px;
+	margin-top: -45px;
 }
 
 .header,
@@ -70,8 +78,22 @@
 }
 
 .arrow {
+	width: 28px;
+	height: 28px;
+	border-radius: 25px;
+	background: #ed5b55;
 	display: flex;
 	z-index: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.arrow:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #ed5b55;
+}
+
+.arrow:active {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #ed5b55;
 }
 
 .header > p {
