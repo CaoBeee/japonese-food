@@ -42,18 +42,8 @@
 	color: #ed5b55;
 }
 
-.addressBtn {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	display: flex;
-	justify-items: center;
-	align-items: center;
-	width: 500px;
-	height: 40px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-	border-radius: 25px;
-	background: #ffffff;
+.autocomplete-container > img {
+	z-index: 3;
 }
 
 .addressBtn > input {
@@ -76,6 +66,12 @@
 
 .addressIcon {
 	margin-left: 10px;
+	z-index: inherit;
+}
+
+.arrow {
+	display: flex;
+	z-index: 1;
 }
 
 .header > p {
