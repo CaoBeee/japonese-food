@@ -36,7 +36,7 @@ export default function Delivery() {
 								<br />
 							</h1>
 						</div>
-						<GeoapifyContext apiKey='c87f9e92f29a46c49a3fed25f7358d31'>
+						<GeoapifyContext apiKey={process.env.NEXT_PUBLIC_GEOAPIFY_API_KEY}>
 							<div
 								id='autocomplete'
 								className='autocomplete-container'
