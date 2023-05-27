@@ -5,6 +5,7 @@
 
 * {
 	margin: 0;
+	font-family: 'Poppins-medium';
 }
 
 body {
@@ -42,3 +43,98 @@ body {
 	margin-left: -280px;
 	z-index: -3;
 }
+
+/* For the Autocomplete container */
+
+.geocoder-container {
+	display: flex;
+	width: 430px;
+	height: auto;
+	z-index: 1 !important;
+}
+
+.geocoder-container > input {
+	border: none;
+	display: flex;
+	width: 390px;
+	height: auto;
+	background: #ffffff;
+}
+
+.geoapify-close-button {
+	display: block !important;
+	height: 20px;
+	cursor: pointer;
+	margin-right: 3px;
+}
+
+.geoapify-close-button > svg {
+	margin-top: 10px;
+	width: 15px;
+	height: auto;
+}
+
+.geoapify-close-button::after {
+	font-size: 25px;
+	content: ' |';
+}
+
+.geoapify-autocomplete-items {
+	margin-left: -34px;
+	font-size: 12px;
+	border: none !important;
+	width: 500px;
+	border-radius: 0px 0px 10px 10px;
+	top: 0;
+	z-index: 0;
+	border-radius: 0px 0px 25px 25px;
+	padding-top: 16px;
+	margin-top: -15px;
+	z-index: -1 !important;
+}
+
+.icon {
+	width: 20px !important;
+	height: 24px !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.address {
+	margin-left: 10px;
+}
+
+.geoapify-autocomplete-item .icon > svg {
+	text-align: center;
+	width: 20px;
+	height: auto;
+}
+
+.geoapify-autocomplete-items:before {
+	position: absolute;
+	top: 0;
+	left: 35px;
+	height: 1px;
+	width: 86%;
+	content: '';
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.autocomplete-container {
+	display: flex;
+	width: 500px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	align-items: center;
+	text-align: center;
+	width: 500px;
+	height: 40px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+	border-radius: 25px 25px 25px 25px;
+	background: #ffffff;
+	margin-bottom: 50px;
+	z-index: 3;
+}
+/* Autocomplete CSS End */
