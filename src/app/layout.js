@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 				<div className='lineContainer'>
 					<Image
 						src={topVectorLine}
-						alt=''
+						alt='sushi'
 						className='topVectorLine'
 					/>
 				</div>{' '}
