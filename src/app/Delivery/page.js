@@ -21,7 +21,6 @@ export default function Delivery() {
 
 	function onSuggestionChange(value) {
 		console.log(value)
-		console.log(process.env.NEXT_PUBLIC_GEOAPIFY_API_KEY)
 	}
 
 	return (
