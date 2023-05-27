@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import styles from '@/styles/Delivery.module.css'
 import sushi from '/public/img/delivery/Sushi.svg'
@@ -21,6 +21,7 @@ export default function Delivery() {
 
 	function onSuggestionChange(value) {
 		console.log(value)
+		console.log(process.env.NEXT_PUBLIC_GEOAPIFY_API_KEY)
 	}
 
 	return (
@@ -67,7 +68,12 @@ export default function Delivery() {
 							</div>
 						</GeoapifyContext>
 						<p>Not ready to order yet? Take a look at our menu for something delicious.</p>
-						<button className={styles.menuBtn}>Menu</button>
+						<Link
+							className={styles.menuBtnLink}
+							href={'/Order'}
+						>
+							<button className={styles.menuBtn}>Menu</button>
+						</Link>
 					</div>
 				</div>
 			</div>

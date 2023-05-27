@@ -82,6 +82,10 @@
 	font-weight: 300;
 }
 
+.menuBtnLink {
+	text-decoration: none;
+}
+
 .menuBtn {
 	width: 176px;
 	padding: 10px 20px;
