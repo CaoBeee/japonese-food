@@ -1,0 +1,163 @@
+﻿.container {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 100%;
+    height: 806.188px;
+}
+
+.our_company {
+    height: 806.188px;
+    width: 45vw;
+}
+
+    .our_company h1 {
+        font-family: 'Poppins-medium';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .our_company p {
+        font-family: 'Poppins-medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 8px;
+    }
+
+.our_products {
+    height: 806.188px;
+    width: 45vw;
+}
+
+    .our_products h1 {
+        font-family: 'Poppins-medium';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .our_products p {
+        font-family: 'Poppins-medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 8px;
+    }
+
+.rewards {
+    height: 806.188px;
+    width: 45vw;
+}
+
+    .rewards h1 {
+        font-family: 'Poppins-medium';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 102px;
+        text-align: center;
+    }
+
+    .rewards p {
+        font-family: 'Poppins-medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 8px;
+    }
+
+.earning {
+    color: #ED5B55;
+}
+
+.rewards_row{
+    margin-top: 20px;
+    display:flex;
+    width: 100%;
+    height: 240px;
+    justify-content:space-around;
+}
+
+.rewards_row div{
+    display:flex;
+    flex-direction:column;
+    width: 33%;
+    text-align:center;
+}
+
+.rewards_row div img{
+    height: 160px;
+    width: 110px;
+    margin:auto;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+
+    .rewards_row div p {
+        font-family: 'Poppins-medium';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #465E68;
+        margin:auto;
+        margin-top:20px;
+    }
+
+.FAQs {
+    height: 806.188px;
+    width: 45vw;
+}
+
+    .FAQs h1 {
+        font-family: 'Poppins-medium';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+.about_buttons_container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 806.188px;
+    margin-right: 60px;
+    margin-left: 60px;
+    width: 50vw;
+    height: 806.188px;
+}
+
+.about_button {
+    flex: 50%;
+    font-family: 'Poppins-medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    height: fit-content;
+    text-transform: uppercase;
+    transition: all linear 0.25s;
+    text-align: center;
+}
+
+    .about_button:hover {
+        filter: brightness(1.8);
+        transform: scale(1.2);
+    }
+
+    .about_button img {
+        height: 240px;
+        text-align: center;
+    }
+
+    .about_button h2 {
+        color: #465E68;
+        text-align: center;
+    }
