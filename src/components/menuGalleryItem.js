@@ -63,7 +63,7 @@ export default function MenuItem({ menuId, title, menuImage, description, initia
                 <h2 style={{ opacity: (!showingAddNotif && Hovered) && 1 || 0 }}>{title}</h2>
                 <p style={{ opacity: (!showingAddNotif && Hovered) && 1 || 0 }}>{description}</p>
 
-                <button style={{ opacity: (!showingAddNotif && Hovered) && 1 || 0, cursor: !alreadyInCart && 'pointer' || 'default' }} onClick={handleClick}>{buttonText}</button>) :
+                <button style={{ opacity: (!showingAddNotif && Hovered) && 1 || 0, cursor: !alreadyInCart && 'pointer' || 'default' }} onClick={handleClick}>{buttonText}</button>
 
                 <h2 className={styles.item_added_notif} style={{ opacity: showingAddNotif && 1 || 0 }}>Added to Cart!</h2>
             </span>
