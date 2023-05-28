@@ -9,9 +9,9 @@
 }
 
 body {
-	margin-right: auto;
+	/* margin-right: auto; */
 	background-color: #f3ede6;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .header {
