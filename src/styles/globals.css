@@ -10,8 +10,6 @@
 
 body {
 	background-color: #f3ede6;
-	width: 1920px;
-	height: 1080px;
 	/* overflow: hidden; */
 }
 
@@ -21,28 +19,29 @@ body {
 }
 
 .scallop {
-	display: flex;
 	position: absolute;
-	width: 500px;
-	height: auto;
-	margin-left: 1420px;
-	margin-top: -145px;
+	top: 0px;
+	right: 0px;
+	width: 24.010416666666668vw;
+	height: 7.257203842049093vh;
 }
+
 .topVectorLine {
 	position: absolute;
-	width: 1900px;
-	height: auto;
-	margin-top: -400px;
-	margin-left: 850px;
+	top: -126.49px;
+	left: 1125.17px;
+	right: 0px;
+	width: 71.7703125vw;
+	height: 38.87086446104589vh;
+	margin-top: 120px;
+	margin-left: -260px;
 	z-index: -2;
 }
 
-.botLineContainer {
+.botVectorLine {
 	position: absolute;
-	width: 1600px;
-	height: 1600px;
-	margin-top: -380px;
-	margin-left: -280px;
+	bottom: -50px;
+	left: -200px;
 	z-index: -3;
 }
 

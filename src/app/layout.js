@@ -20,29 +20,31 @@ export default function RootLayout({ children }) {
 				<div className='header'>
 					<JaponLogo />
 					<NavigationBar />
-				</div>
-				<Image
-					src={scallopPattern}
-					alt='scallop pattern'
-					className='scallop'
-				/>
-				{/* <div className='lineContainer'>
+					<Image
+						src={scallopPattern}
+						alt='scallop pattern'
+						className='scallop'
+						width={461}
+						height={68}
+					/>
 					<Image
 						src={topVectorLine}
-						alt='sushi'
+						alt='bottom vector line'
 						className='topVectorLine'
+						width={1377.99}
+						height={364.22}
 					/>
-				</div> */}
+				</div>
 				<CartProvider>
 					<div>{children}</div>
 				</CartProvider>
-				{/* <div
-					className='botLineContainer'
-					style={{
-						backgroundImage: `url(${botVectorLine.src})`,
-						backgroundRepeat: 'no-repeat',
-					}}
-				></div> */}
+				<Image
+					src={botVectorLine}
+					alt='bottom vector lines'
+					className='botVectorLine'
+					width={1424}
+					height={368.82}
+				/>
 			</body>
 		</html>
 	)
