@@ -9,13 +9,15 @@
 }
 
 body {
-	/* margin-right: auto; */
 	background-color: #f3ede6;
+	width: 1920px;
+	height: 1080px;
 	/* overflow: hidden; */
 }
 
 .header {
-	display: flex;
+	display: inline-flex;
+	flex-direction: row;
 }
 
 .scallop {

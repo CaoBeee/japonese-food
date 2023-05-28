@@ -26,23 +26,23 @@ export default function RootLayout({ children }) {
 					alt='scallop pattern'
 					className='scallop'
 				/>
-				<div className='lineContainer'>
+				{/* <div className='lineContainer'>
 					<Image
 						src={topVectorLine}
 						alt='sushi'
 						className='topVectorLine'
 					/>
-				</div>{' '}
+				</div> */}
 				<CartProvider>
 					<div>{children}</div>
 				</CartProvider>
-				<div
+				{/* <div
 					className='botLineContainer'
 					style={{
 						backgroundImage: `url(${botVectorLine.src})`,
 						backgroundRepeat: 'no-repeat',
 					}}
-				></div>
+				></div> */}
 			</body>
 		</html>
 	)
