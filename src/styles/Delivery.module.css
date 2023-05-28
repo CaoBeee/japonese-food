@@ -15,7 +15,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* width: 1900px; */
 	height: inherit;
 }
 
@@ -26,15 +25,13 @@
 
 .sushiBackgroundContainer {
 	z-index: -1;
-	position: fixed;
 	width: 90vw;
 	height: 90vh;
 }
 
 .sushi {
-	/* position: relative; */
-	margin-left: 560px;
-	margin-top: -45px;
+	margin-left: 330px;
+	margin-top: -20px;
 }
 
 .header,
