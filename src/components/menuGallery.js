@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useContext, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { hasCookie, getCookie } from 'cookies-next';
 import MenuItem from './menuGalleryItem';
 import philly from '/public/img/menu/phillyRoll.jpg';
@@ -9,7 +9,8 @@ import assorted from '/public/img/menu/assortedNigiri.jpg'
 import styles from '../styles/gallery.module.css';
 
 export default function MenuGallery() {
-    const [selectionState, setSelectionState] = useState(0);
+    const [selectionState, setSelectionState] = useState('1');
+    const [menuItemsVersion, setMenuItemsVersion] = useState(0);
     const [menuState, setMenuState] = useState(0);
     useEffect(() => {
         if (hasCookie('menu_selection_state')) {
@@ -20,7 +21,6 @@ export default function MenuGallery() {
         }
         const listenCookieChange = () => {
             setSelectionState(getCookie('menu_selection_state'));
-            setMenuState(0);
         }
         window.addEventListener("cookie", listenCookieChange);
         return () => window.removeEventListener("cookie", listenCookieChange);
@@ -46,65 +46,64 @@ export default function MenuGallery() {
         <MenuItem menuId={18} menuImage={philly} title="Philidelphia Roll 9" description="Fresh salmon, cream cheese, cucumber and sushi rice rolled in nori." initialPrice={22.99} />,
         <MenuItem menuId={19} menuImage={assorted} title="Assorted Nigiri 4" description="Sushi rice topped with either tuna, yellow tail, salmon or unagi." initialPrice={23.99} />
     ]
-    const sushiRolls = menuItemArr.filter(function (menuItemArr) {
-        return menuItemArr.props.title.includes('Roll');
-    })
-    const nigiri = menuItemArr.filter(function (menuItemArr) {
-        return menuItemArr.props.title.includes('Nigiri');
-    })
-    const sidesBeverges = menuItemArr.filter(function (menuItemArr) {
-        return !menuItemArr.props.title.includes('Roll') && !menuItemArr.props.title.includes('Nigiri');
-    })
-    if (selectionState == 1) {
-        curSelectionLen = menuItemArr.length
-    }
-    else if (selectionState == 2) {
-        curSelectionLen = sushiRolls.length
-    }
-    else if (selectionState == 3) {
-        curSelectionLen = nigiri.length
-    }
-    else {
-        curSelectionLen = sidesBeverges.length
-    }
+
+    const menuItems = useMemo(() => {
+        switch (selectionState) {
+            case "1":
+                return menuItemArr;
+            case "2":
+                return menuItemArr.filter(item => item.props.title.includes('Roll'));
+            case "3":
+                return menuItemArr.filter(item => item.props.title.includes('Nigiri'));
+            case "4":
+                return menuItemArr.filter(item => !item.props.title.includes('Roll') && !item.props.title.includes('Nigiri'));
+            default:
+                return [];
+        }
+    }, [selectionState, menuItemArr]);
+
+    const pageSize = 9;
+    const totalPages = Math.ceil(menuItems.length / pageSize);
+
+    useEffect(() => {
+        setMenuItemsVersion(prevVersion => prevVersion + 1);
+    }, [selectionState]);
+
+    useEffect(() => {
+        setMenuState(0);
+    }, [menuItemsVersion]);
+
+    const handleMenuStateChange = delta => {
+        setMenuState(prevState => {
+            const newMenuState = prevState + delta;
+            if (newMenuState >= 0 && newMenuState < totalPages) {
+                return newMenuState;
+            }
+            return prevState;
+        });
+    };
+
     return (
         <span className={styles.gallery_container}>
-            {selectionState == 1 &&
-                <span className={styles.gallery_items_container}>
-                    {menuItemArr.slice(9 * menuState, 9 * (menuState + 1))}
-                </span>
-            }
-            {selectionState == 2 &&
-                <span className={styles.gallery_items_container}>
-                    {sushiRolls.slice(9 * menuState, 9 * (menuState + 1))}
-                </span>
-            }
-            {selectionState == 3 &&
-                <span className={styles.gallery_items_container}>
-                    {nigiri.slice(9 * menuState, 9 * (menuState + 1))}
-                </span>
-            }
-            {selectionState == 4 &&
-                <span className={styles.gallery_items_container}>
-                    {sidesBeverges.slice(9 * menuState, 9 * (menuState + 1))}
-                </span>
-            }
-            {curSelectionLen > 9 &&
+            <span className={styles.gallery_items_container}>
+                {menuItems.slice(menuState * pageSize, (menuState + 1) * pageSize)}
+            </span>
+            {totalPages > 1 && (
                 <span className={styles.more_less_container}>
-                    {menuState > 0 &&
-                        <span className={styles.up_span} onClick={() => setMenuState(menuState - 1)}>
+                    {menuState > 0 && (
+                        <span className={styles.up_span} onClick={() => handleMenuStateChange(-1)}>
                             <div className={styles.up_arrow} />
                             <p className={styles.less}>Go Back</p>
                         </span>
-                    }
-                    {menuState <= (curSelectionLen - 9) / 9 &&
-                        <span className={styles.down_span} onClick={() => setMenuState(menuState + 1)}>
+                    )}
+                    {menuState < totalPages - 1 && (
+                        <span className={styles.down_span} onClick={() => handleMenuStateChange(1)}>
                             <p className={styles.more}>More Items</p>
                             <div className={styles.down_arrow} />
                         </span>
-                    }
+                    )}
                 </span>
-            }
+            )}
         </span>
-    )
+    );
 }
