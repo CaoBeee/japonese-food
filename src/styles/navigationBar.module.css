@@ -4,20 +4,21 @@
 }
 
 .navBar {
-	margin-left: -100px;
-	margin-top: 60px;
+	margin-left: -50px;
+	margin-top: 4rem;
 	display: flex;
+	flex-direction: row;
 }
 
 .navBar li {
 	list-style: none;
-	margin-right: 2em;
+	margin-right: 1.5625rem;
 	font-family: 'Poppins-Medium';
 }
 
 .separator {
 	user-select: none;
-	font-weight: bold;
+	font-weight: regular;
 }
 
 .navBar a {
@@ -25,15 +26,14 @@
 	padding-right: 5px;
 	color: black;
 	text-decoration: none;
-	padding: 0.3125rem;
 	font-size: 1.25rem;
 	text-align: center;
 }
 
 .navBar a:hover {
 	color: #ed5b55;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 	box-shadow: 0 0 0 2.5px #ed5b55;
 	font-size: 1.25rem;
 	font-weight: bold;
@@ -43,14 +43,12 @@
 
 .navBar a:active {
 	color: #ffffff;
-	box-shadow: 0 0 0 2.5px #ffffff;
+	/* box-shadow: 0 0 0 2.5px #ffffff; */
+	border: 2.475px solid #ed5b55;
+	border-radius: 4.95px;
 }
 
 .navBar .active {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	color: #ed5b55;
 	box-shadow: 0 0 0 2.5px #ed5b55;
 	border-radius: 0.3125rem;

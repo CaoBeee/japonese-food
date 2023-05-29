@@ -6,49 +6,60 @@
 * {
 	margin: 0;
 	font-family: 'Poppins-medium';
+	box-sizing: border-box;
 }
 
 body {
-	margin-right: auto;
 	background-color: #f3ede6;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .header {
-	display: flex;
+	display: inline-flex;
+	flex-direction: row;
 }
 
 .scallop {
-	display: flex;
 	position: absolute;
-	width: 500px;
-	height: auto;
-	margin-left: 1420px;
-	margin-top: -145px;
+	top: 0px;
+	right: 0px;
+	width: 24.010416666666668vw;
+	height: 7.257203842049093vh;
 }
+
 .topVectorLine {
 	position: absolute;
-	width: 1900px;
-	height: auto;
-	margin-top: -400px;
-	margin-left: 850px;
+	top: -126.49px;
+	left: 1125.17px;
+	right: 0px;
+	width: 71.7703125vw;
+	height: 38.87086446104589vh;
+	margin-top: 120px;
+	margin-left: -260px;
 	z-index: -2;
 }
 
-.botLineContainer {
-	position: absolute;
-	width: 1600px;
-	height: 1600px;
-	margin-top: -380px;
-	margin-left: -280px;
-	z-index: -3;
-}
-
 /* For the Autocomplete container */
+.autocomplete-container {
+	display: flex;
+	width: 387px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	align-items: center;
+	text-align: center;
+	height: 40px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+	border-radius: 25px 25px 25px 25px;
+	background: #ffffff;
+	margin-bottom: 50px;
+	z-index: 3;
+}
 
 .geocoder-container {
 	display: flex;
-	width: 430px;
+	width: 315px;
 	height: auto;
 	z-index: 1 !important;
 }
@@ -56,34 +67,36 @@ body {
 .geocoder-container > input {
 	border: none;
 	display: flex;
-	width: 390px;
+	width: 290px;
 	height: auto;
 	background: #ffffff;
 }
 
-.geoapify-close-button {
-	display: block !important;
+.geoapify-close-button,
+.visible {
+	display: block;
 	height: 20px;
 	cursor: pointer;
 	margin-right: 3px;
 }
 
 .geoapify-close-button > svg {
-	margin-top: 10px;
+	display: block;
 	width: 15px;
 	height: auto;
 }
 
 .geoapify-close-button::after {
-	font-size: 25px;
-	content: ' |';
+	margin-left: 10px;
+	font-size: 20px;
+	content: '   | ';
 }
 
 .geoapify-autocomplete-items {
 	margin-left: -34px;
 	font-size: 12px;
 	border: none !important;
-	width: 500px;
+	width: 387px;
 	border-radius: 0px 0px 10px 10px;
 	top: 0;
 	z-index: 0;
@@ -112,29 +125,22 @@ body {
 
 .geoapify-autocomplete-items:before {
 	position: absolute;
-	top: 0;
-	left: 35px;
-	height: 1px;
-	width: 86%;
+	top: 15px;
+	left: 33px;
+	width: 82%;
 	content: '';
 	border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.autocomplete-container {
-	display: flex;
-	width: 500px;
-	border: none;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	align-items: center;
-	text-align: center;
-	width: 500px;
-	height: 40px;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
-	border-radius: 25px 25px 25px 25px;
-	background: #ffffff;
-	margin-bottom: 50px;
-	z-index: 3;
-}
 /* Autocomplete CSS End */
+
+.botVectorLine {
+	position: absolute;
+	bottom: -30px;
+	left: -80px;
+	z-index: -3;
+}
+
+.footer {
+	position: relative;
+}

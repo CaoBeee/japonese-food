@@ -1,13 +1,20 @@
-.logoContainer {
-	width: 280px;
-	height: auto;
+.container {
+	display: relative;
+	width: 17.03125vw;
+	height: 20.490928495197437vh;
+	margin-top: -2rem;
 }
 
-.logo > img {
-	padding-top: 10px;
-	padding-left: 10px;
-	margin-bottom: 1rem;
+.logo {
+	position: absolute;
+	top: 1.6rem;
+	left: 1.6rem;
 	cursor: pointer;
+}
+
+.logo > a {
+	text-decoration: none;
+	font-size: 0px;
 }
 
 .logo:hover {
@@ -19,53 +26,21 @@
 }
 
 /* CSS styles for mobile phones */
-@media (max-width: 481px) {
-	.logoContainer {
-		width: 500px;
-		height: auto;
-	}
-
-	.logo img {
-		margin-top: 0.5rem;
-		margin-left: 0.5rem;
-		width: 15px;
-		height: auto;
-	}
+@media (max-width: 767px) {
 }
 
 /* CSS styles for tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-	.logoContainer {
-		height: auto;
-	}
-
-	.logo img {
-		width: 25px;
-		height: inherit;
-		margin-bottom: 2rem;
-	}
+@media (min-width: 768px) and (max-width: 1023px) {
 }
 
-/* CSS styles for laptops and desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-	.logoContainer {
-		width: 20rem;
-		height: 10rem;
-	}
-
-	.logo img {
-		margin-left: 0.5rem;
-	}
+/* CSS styles for small laptops and desktops */
+@media (min-width: 1024px) and (max-width: 1279px) {
 }
 
-/* CSS styles for large screens and high-resolution displays */
-@media (min-width: 1025px) {
-	.logoContainer {
-		width: 300px;
-		height: 145px;
-	}
+/* CSS styles for medium laptops and desktops */
+@media (min-width: 1280px) and (max-width: 1439px) {
+}
 
-	.logo img {
-		margin-left: 0.5rem;
-	}
+/* CSS styles for extra large screens and high-resolution displays */
+@media (min-width: 1920px) {
 }
