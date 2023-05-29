@@ -18,38 +18,30 @@ export default function Delivery() {
 
 	return (
 		<div className={styles.container}>
-			<div className={styles.headerContainer}>
-				<div className={styles.leftContainer}>
-					<div style={{ display: 'block' }}>
-						<div className={styles.header}>
-							<h1>
-								You order,
-								<br />
-								<span className={styles.headerSpan}> we deliver.</span>
-								<br />
-							</h1>
-						</div>
-						<AutocompleteContext></AutocompleteContext>
-						<p>Not ready to order yet? Take a look at our menu for something delicious.</p>
-						<Link
-							className={styles.menuBtnLink}
-							href={'/Order'}
-						>
-							<button className={styles.menuBtn}>Menu</button>
-						</Link>
-					</div>
-				</div>
+			<div className={styles.leftContainer}>
+				<h1 className={styles.header}> You order,</h1>
+				<span className={styles.headerSpan}> we deliver.</span>
+				<AutocompleteContext />
+				<p className={styles.paragraph}>
+					Not ready to order yet? Take a look at our menu for something delicious.
+				</p>
+				<Link
+					className={styles.menuBtnLink}
+					href={'/Order'}
+				>
+					<button className={styles.menuBtn}>Menu</button>
+				</Link>
 			</div>
 
 			<div className={styles.sushiBackgroundContainer}>
 				<Image
 					src={sushi.src}
 					alt='sushi'
-					width={822}
-					height={859}
+					width={908}
+					height={951}
 					className={styles.sushi}
 					priority={true}
-				></Image>
+				/>
 			</div>
 		</div>
 	)

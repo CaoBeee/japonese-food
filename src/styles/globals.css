@@ -39,22 +39,27 @@ body {
 	z-index: -2;
 }
 
-.botVectorLine {
-	position: absolute;
-	bottom: -50px;
-	left: -100px;
-	z-index: -3;
-}
-
-.footer {
-	position: relative;
-}
-
 /* For the Autocomplete container */
+.autocomplete-container {
+	display: flex;
+	width: 387px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	align-items: center;
+	text-align: center;
+	height: 40px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+	border-radius: 25px 25px 25px 25px;
+	background: #ffffff;
+	margin-bottom: 50px;
+	z-index: 3;
+}
 
 .geocoder-container {
 	display: flex;
-	width: 430px;
+	width: 315px;
 	height: auto;
 	z-index: 1 !important;
 }
@@ -62,7 +67,7 @@ body {
 .geocoder-container > input {
 	border: none;
 	display: flex;
-	width: 390px;
+	width: 290px;
 	height: auto;
 	background: #ffffff;
 }
@@ -89,7 +94,7 @@ body {
 	margin-left: -34px;
 	font-size: 12px;
 	border: none !important;
-	width: 500px;
+	width: 387px;
 	border-radius: 0px 0px 10px 10px;
 	top: 0;
 	z-index: 0;
@@ -126,21 +131,15 @@ body {
 	border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.autocomplete-container {
-	display: flex;
-	width: 500px;
-	border: none;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	align-items: center;
-	text-align: center;
-	width: 500px;
-	height: 40px;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
-	border-radius: 25px 25px 25px 25px;
-	background: #ffffff;
-	margin-bottom: 50px;
-	z-index: 3;
-}
 /* Autocomplete CSS End */
+
+.botVectorLine {
+	position: absolute;
+	bottom: 0px;
+	left: -80px;
+	z-index: -3;
+}
+
+.footer {
+	position: relative;
+}

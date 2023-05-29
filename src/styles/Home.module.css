@@ -6,15 +6,17 @@
 }
 
 .container {
-	margin-top: 60px;
+	margin-top: 30px;
 	display: flex;
-	margin-left: 60px;
+	margin-left: 180px;
+	height: 70vh;
 	overflow: visible;
 }
 
 .leftContainer {
 	display: flex;
 	flex-direction: column;
+	width: 638px;
 }
 
 .header,
@@ -40,25 +42,23 @@
 }
 
 .bigCircle {
-	margin-top: -190px;
+	margin-right: 50px;
+	margin-top: -150px;
 	user-select: none;
-	overflow: hidden;
-	z-index: -2;
+	z-index: -4;
 }
 
 .floral {
 	position: absolute;
-	width: 132px;
-	height: 142px;
-	left: 1060px;
-	top: 165px;
+	left: 950px;
+	top: 150px;
 }
 
 .sVector {
 	position: absolute;
 	user-select: none;
 	margin-left: -80px;
-	margin-top: 310px;
+	margin-top: 350px;
 	z-index: 0;
 }
 
@@ -79,7 +79,7 @@
 .paragraph {
 	text-align: center;
 	margin-top: 36.55px;
-	line-height: 30.1px;
+	line-height: 30.6px;
 	font-family: 'Poppins';
 	font-size: 18px;
 }

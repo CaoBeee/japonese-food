@@ -64,23 +64,23 @@ export default function Home() {
 							src={floralPattern}
 							alt='floral'
 							width={132}
-							height={142}
+							height={141}
 						/>
 					</div>
 					<div className={styles.sVector}>
 						<Image
 							src={sVector}
 							alt='S-Vector'
-							width={208}
-							height={227}
+							width={206}
+							height={225}
 						/>
 					</div>
 					<div className={styles.bigCircle}>
 						<Image
 							src={bigCircle}
 							alt='bigCircle'
-							width={750}
-							sizes={750}
+							width={744}
+							sizes={744}
 						/>
 					</div>
 				</div>
