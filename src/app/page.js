@@ -11,7 +11,7 @@ import blueStar from '/public/img/home/BlueStar.svg'
 import sVector from '/public/img/home/S-ShapeVector.svg'
 import Link from 'next/link'
 
-export default function MyApp() {
+export default function Home() {
 	const faviconLink = (
 		<link
 			rel='shortcut icon'
@@ -29,56 +29,60 @@ export default function MyApp() {
 		<React.Fragment>
 			{faviconLink}
 			<div className={styles.container}>
-				<div className={styles.headerContainer}>
-					<h1 className={styles.header}>
-						How about
-						<br />
-						<span className={styles.headerSpan}> Japanese food?</span>
-					</h1>
+				<div className={styles.leftContainer}>
+					<h1 className={styles.header}>How about</h1>
+					<span className={styles.headerSpan}> Japanese food?</span>
 					<div className={styles.starContainer}>
 						<Image
 							src={redStar}
-							alt='floral'
+							alt='red star'
 						/>
 						<Image
 							src={blueStar}
-							alt='bigCircle'
+							alt='blue star'
 						/>
 						<Image
 							src={redStar}
-							alt='floral'
+							alt='red star'
 						/>
 						<Image
 							src={redStar}
-							alt='floral'
+							alt='red star'
 						/>
 					</div>
-					<div>
-						<p className={styles.paragraph}>{paragraph}</p>
-						<Link
-							className={styles.orderLink}
-							href='/Order'
-						>
-							<button className={styles.orderBtn}>Order now</button>
-						</Link>
-					</div>
+					<p className={styles.paragraph}>{paragraph}</p>
+					<Link
+						className={styles.orderLink}
+						href='/Order'
+					>
+						<button className={styles.orderBtn}>Order now</button>
+					</Link>
 				</div>
 				<div className={styles.vectorContainer}>
-					<Image
-						src={floralPattern}
-						alt='floral'
-						className={styles.floral}
-					/>
-					<Image
-						src={sVector}
-						alt='S-Vector'
-						className={styles.sVector}
-					/>
-					<Image
-						src={bigCircle}
-						alt='bigCircle'
-						className={styles.bigCircle}
-					/>
+					<div className={styles.floral}>
+						<Image
+							src={floralPattern}
+							alt='floral'
+							width={132}
+							height={142}
+						/>
+					</div>
+					<div className={styles.sVector}>
+						<Image
+							src={sVector}
+							alt='S-Vector'
+							width={208}
+							height={227}
+						/>
+					</div>
+					<div className={styles.bigCircle}>
+						<Image
+							src={bigCircle}
+							alt='bigCircle'
+							width={750}
+							sizes={750}
+						/>
+					</div>
 				</div>
 			</div>
 		</React.Fragment>

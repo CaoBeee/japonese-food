@@ -6,42 +6,41 @@
 }
 
 .container {
-	align-items: center;
+	margin-top: 60px;
 	display: flex;
 	margin-left: 60px;
-	height: inherit;
+	overflow: visible;
 }
 
-.headerContainer {
-	width: 690px;
-	height: inherit;
+.leftContainer {
+	display: flex;
+	flex-direction: column;
 }
 
 .header,
-.header > span {
+.headerSpan {
+	display: flex;
+	flex-direction: column;
 	font-family: 'Poppins-Bold';
-	font-size: 80px;
+	font-size: 68px;
 	text-align: center;
-	line-height: 4.5rem;
 	user-select: none;
+	justify-content: center;
+	height: 48px;
 }
 
 .headerSpan {
+	margin-top: 16px;
 	color: #ed5b55;
 }
 
 .vectorContainer {
-	display: flex;
-	width: 1170px;
-	height: inherit;
-	margin-top: 5rem;
+	margin-left: 209px;
+	margin-bottom: 58px;
 }
 
 .bigCircle {
-	margin-top: -200px;
-	margin-left: 100px;
-	width: 920px;
-	height: auto;
+	margin-top: -190px;
 	user-select: none;
 	overflow: hidden;
 	z-index: -2;
@@ -49,20 +48,17 @@
 
 .floral {
 	position: absolute;
-	width: 130px;
-	height: auto;
-	margin-left: 40px;
-	margin-top: -30px;
-	user-select: none;
+	width: 132px;
+	height: 142px;
+	left: 1060px;
+	top: 165px;
 }
 
 .sVector {
 	position: absolute;
-	width: 180px;
-	height: auto;
-	margin-top: 360px;
-	margin-left: 20px;
 	user-select: none;
+	margin-left: -80px;
+	margin-top: 310px;
 	z-index: 0;
 }
 
@@ -81,14 +77,11 @@
 }
 
 .paragraph {
-	margin: auto;
 	text-align: center;
-	margin-top: 48px;
+	margin-top: 36.55px;
 	line-height: 30.1px;
 	font-family: 'Poppins';
-	font-size: 16px;
-	font-weight: 400;
-	margin-bottom: 55px;
+	font-size: 18px;
 }
 
 .orderLink {
@@ -97,11 +90,9 @@
 
 .orderBtn {
 	padding: 10px 20px;
-	gap: 10px;
 	display: flex;
-	text-align: center;
-	justify-content: center;
 	margin: auto;
+	margin-top: 51px;
 	color: #ffffff;
 	background-color: #ed5b55;
 	font-family: 'Poppins';

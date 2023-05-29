@@ -6,6 +6,7 @@ import NavigationBar from '@/components/navigationBar'
 import scallopPattern from '/public/img/home/BlueScallopPattern.svg'
 import topVectorLine from '/public/img/home/TopVectorLines.svg'
 import botVectorLine from '/public/img/home/BottomVectorLines.svg'
+import Footer from '@/components/footer'
 import { CartProvider } from '../components/cartContext'
 
 export const metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<div className='header'>
+				<header className='header'>
 					<JaponLogo />
 					<NavigationBar />
 					<Image
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
 						width={1377.99}
 						height={364.22}
 					/>
-				</div>
+				</header>
 				<CartProvider>
 					<div>{children}</div>
 				</CartProvider>
@@ -45,6 +46,9 @@ export default function RootLayout({ children }) {
 					width={1424}
 					height={368.82}
 				/>
+				<footer className='footer'>
+					<Footer />
+				</footer>
 			</body>
 		</html>
 	)

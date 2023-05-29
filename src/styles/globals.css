@@ -6,11 +6,12 @@
 * {
 	margin: 0;
 	font-family: 'Poppins-medium';
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #f3ede6;
-	/* overflow: hidden; */
+	overflow-x: hidden;
 }
 
 .header {
@@ -41,8 +42,12 @@ body {
 .botVectorLine {
 	position: absolute;
 	bottom: -50px;
-	left: -200px;
+	left: -100px;
 	z-index: -3;
+}
+
+.footer {
+	position: relative;
 }
 
 /* For the Autocomplete container */
