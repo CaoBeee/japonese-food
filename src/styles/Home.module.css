@@ -9,8 +9,6 @@
 	margin-top: 30px;
 	display: flex;
 	margin-left: 180px;
-	height: 70vh;
-	overflow: visible;
 }
 
 .leftContainer {
@@ -59,7 +57,6 @@
 	user-select: none;
 	margin-left: -80px;
 	margin-top: 350px;
-	z-index: 0;
 }
 
 .starContainer {

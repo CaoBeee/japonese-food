@@ -72,22 +72,24 @@ body {
 	background: #ffffff;
 }
 
-.geoapify-close-button {
-	display: block !important;
+.geoapify-close-button,
+.visible {
+	display: block;
 	height: 20px;
 	cursor: pointer;
 	margin-right: 3px;
 }
 
 .geoapify-close-button > svg {
-	margin-top: 10px;
+	display: block;
 	width: 15px;
 	height: auto;
 }
 
 .geoapify-close-button::after {
-	font-size: 25px;
-	content: ' |';
+	margin-left: 10px;
+	font-size: 20px;
+	content: '   | ';
 }
 
 .geoapify-autocomplete-items {
@@ -123,10 +125,9 @@ body {
 
 .geoapify-autocomplete-items:before {
 	position: absolute;
-	top: 0;
-	left: 35px;
-	height: 1px;
-	width: 86%;
+	top: 15px;
+	left: 33px;
+	width: 82%;
 	content: '';
 	border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
@@ -135,7 +136,7 @@ body {
 
 .botVectorLine {
 	position: absolute;
-	bottom: 0px;
+	bottom: -30px;
 	left: -80px;
 	z-index: -3;
 }
