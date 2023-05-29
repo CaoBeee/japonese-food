@@ -12,7 +12,13 @@ export default function Order() {
         <div className={styles.container }>
             <MenuSelections />
             <MenuGallery />
-            <Cart cartItems={cartItems} />
+            <div className={styles.order_container }>
+                <Cart cartItems={cartItems} />
+                <div className={styles.address }><p><b><em>Delivering to:</em></b><br />
+                    Delivery Address Here<br /><br/>
+                    <text>Click here to change</text>
+                </p></div>
+            </div>
         </div>
     )
 }

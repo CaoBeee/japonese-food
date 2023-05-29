@@ -3,3 +3,35 @@
 	flex-direction: row;
 	margin-left: 60px;
 }
+
+.order_container {
+	height: 730px;
+	margin-left: 100px;
+	position:relative;
+}
+
+.address {
+	background-color: #ED5B55;
+	color:white;
+	border-radius: 25px;
+	display: flex;
+	padding: 10px 20px;
+	width: 300px;
+	bottom:0;
+	position:absolute;
+}
+
+	.address p {
+		line-height: 175%;
+	}
+
+.address text{
+	font-style: italic;
+	text-decoration:underline;
+	font-weight:500;
+	font-size: 12px;
+}
+
+.address text:hover{
+	cursor:pointer;
+}

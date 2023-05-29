@@ -128,14 +128,15 @@
     display: flex;
     flex-wrap: wrap;
     height: 806.188px;
-    margin-right: 60px;
-    margin-left: 60px;
-    width: 50vw;
+    margin-right: 100px;
+    margin-left: 0px;
+    width: fit-content;
     height: 806.188px;
+    justify-content:space-evenly;
+    gap:0 15%;
 }
 
 .about_button {
-    flex: 50%;
     font-family: 'Poppins-medium';
     font-style: normal;
     font-weight: 700;
@@ -145,19 +146,24 @@
     text-transform: uppercase;
     transition: all linear 0.25s;
     text-align: center;
+    width: fit-content;
 }
 
     .about_button:hover {
         filter: brightness(1.8);
         transform: scale(1.2);
+        cursor: pointer;
     }
 
     .about_button img {
         height: 240px;
         text-align: center;
+        margin-left:12px;
     }
 
     .about_button h2 {
         color: #465E68;
         text-align: center;
+        width: fit-content;
+        margin:auto;
     }

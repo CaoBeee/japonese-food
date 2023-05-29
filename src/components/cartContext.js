@@ -5,6 +5,7 @@ const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
+    const [itemsToRemove, setItemsToRemove] = useState([]);
 
     useEffect(() => {
         const storedCart = JSON.parse(localStorage.getItem('cart'));
