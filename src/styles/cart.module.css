@@ -47,15 +47,16 @@
 .item_container{
     display:flex;
     margin-top:18px;
+    height:auto;
 }
 
 .item_image {
     display: flex;
     border-radius: 16px;
     height: 100px;
-    height: 80px;
-    width: 80px;
-    margin-right: 10px;
+    height: 82px;
+    width: 82px;
+    margin-right: 8px;
     object-fit:cover;
 }
 
@@ -82,19 +83,19 @@
         line-height: 15px;
     }
 
-.remove_item {
+#remove_item {
     color: #ED5B55;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
-    line-height: 12px;
+    font-size: 12px;
+    font-style: italic;
     display: flex;
     align-items: flex-end;
     text-decoration-line: underline;
 }
 
-.remove_item:hover{
+#remove_item:hover{
     cursor:pointer;
 }
 

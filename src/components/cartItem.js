@@ -27,7 +27,7 @@ export default function CartItem({ menuId, menuTitle, menuImage, title, initialP
                 <h3>{menuTitle}</h3>
                 <p>4 Pieces</p>
                 <p>Soy Sauce</p>
-                <p onClick={() => handleRemoveFromCart(menuId)} className={styles.remove_item }>Remove</p>
+                <p onClick={() => handleRemoveFromCart(menuId)} id={styles.remove_item }>Remove</p>
             </span>
             <span className={styles.quantity_buttons_container}>
                 {quantity <= 1 &&

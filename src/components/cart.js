@@ -33,8 +33,8 @@ export default function Cart({ cartItems }) {
                     </span>
                 </CSSTransition>
                 <span className={styles.checkout_container}>
-                    <span className={styles.cart_items_container}>
-                        <TransitionGroup>
+                    
+                    <TransitionGroup className={styles.cart_items_container} component="span">
                             {
                                 cart.map((item) => (
                                     <CSSTransition in={isItemInCart(item.id)} key={item.id} timeout={1000} classNames={{ enter: 'animate__animated', enterActive: 'animate__fadeIn', exit: 'animate__animated', exitActive: 'animate__fadeOut' }}>
@@ -43,7 +43,6 @@ export default function Cart({ cartItems }) {
                                 ))
                             }
                         </TransitionGroup>
-                    </span>
                     <CSSTransition
                         in={!isCartEmpty()}
                         timeout={1000}
