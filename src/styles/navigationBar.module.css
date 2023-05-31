@@ -43,8 +43,8 @@
 
 .navBar a:active {
 	color: #ffffff;
-	/* box-shadow: 0 0 0 2.5px #ffffff; */
-	border: 2.475px solid #ed5b55;
+	box-shadow: 0 0 0 2.5px;
+	border: 2.5px solid #ffffff;
 	border-radius: 4.95px;
 }
 
