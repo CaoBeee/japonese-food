@@ -7,11 +7,10 @@
 
 .container {
 	font-family: 'Poppins';
-	justify-content: center;
 	display: flex;
 	height: 806.188px;
-	margin-left: 60px;
-	max-width: 1860px;
+	margin-left: 180px;
+	margin-top: 30px;
 }
 
 .container button {
@@ -19,15 +18,21 @@
 }
 
 .left {
-	margin-left: -500px;
+	margin-left: 30px;
 	text-align: center;
 	margin-right: 35px;
 }
 
 .header {
-	margin-top: 68px;
+	font-family: 'poppins-bold';
+	text-align: center;
+	display: flex;
+	justify-content: center;
 	font-size: 68px;
-	margin-bottom: 62px;
+	margin-bottom: 55px;
+	width: 638px;
+	height: 48px;
+	flex-direction: column;
 }
 
 .left img {
@@ -39,11 +44,42 @@
 	margin-bottom: 19px;
 }
 
+.visitSentence {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	font-family: 'Poppins';
+	font-weight: 500;
+	margin-bottom: 26px;
+}
+
 .addressContainer {
 	text-align: left;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	line-height: 37.7px;
+}
+
+.northSouthContainer {
+	justify-content: center;
+	display: flex;
+	font-size: 20px;
+	display: flex;
+	line-height: 37.7px;
+	margin-left: 60px;
+}
+
+.north {
+	margin-right: 10px;
+	width: 276px;
+	height: 104px;
+}
+
+.south {
+	width: 276px;
+	height: 104px;
 }
 
 .north span,
@@ -67,10 +103,6 @@
 	box-shadow: 0px 4px 4px rgba(70, 94, 104, 0.25);
 }
 
-.addressContainer p {
-	font-size: 20px;
-}
-
 .directionBtn {
 	background-color: #ed5b55;
 	box-shadow: 0px 0px 10px 1px #ed5b55;
@@ -83,7 +115,7 @@
 }
 
 .right {
-	margin-top: 68px;
+	margin-top: -30px;
 	margin-left: 258px;
 }
 
@@ -101,7 +133,7 @@
 }
 
 .contactForm input {
-	width: 418px;
+	width: 506px;
 	height: 40px;
 	margin-bottom: 8px;
 }
@@ -110,6 +142,7 @@
 	width: 418px;
 	height: 136px;
 	margin-bottom: 6px;
+	width: 506px;
 }
 
 .contactForm button {
