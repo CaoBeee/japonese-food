@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import '../styles/globals.css'
 import JaponLogo from '@/components/japonLogo'
@@ -25,8 +26,6 @@ export default function RootLayout({ children }) {
 						src={scallopPattern}
 						alt='scallop pattern'
 						className='scallop'
-						width={461}
-						height={68}
 					/>
 					<Image
 						src={topVectorLine}
@@ -43,8 +42,6 @@ export default function RootLayout({ children }) {
 					src={botVectorLine}
 					alt='bottom vector lines'
 					className='botVectorLine'
-					width={1424}
-					height={368.82}
 				/>
 				<footer className='footer'>
 					<Footer />
