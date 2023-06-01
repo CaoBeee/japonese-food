@@ -56,28 +56,32 @@ export default function Contact() {
 					src={arrow}
 					alt='arrow'
 				/>
-				<p>Or visit us and speak with someone in person at any of our locations below:</p>
 				<div className={styles.addressContainer}>
-					<div className={styles.north}>
-						<p>
-							<span>Northern California</span>
-							<br />
-							12345 Bay Area Place
-							<br />
-							San Francisco, CA 12345
-						</p>
-						<button className={styles.directionBtn}>Get Directions</button>
-					</div>
+					<p className={styles.visitSentence}>
+						Or visit us and speak with someone in person at any of our locations below:
+					</p>
+					<div className={styles.northSouthContainer}>
+						<div className={styles.north}>
+							<p>
+								<span>Northern California</span>
+								<br />
+								12345 Bay Area Place
+								<br />
+								San Francisco, CA 12345
+							</p>
+							<button className={styles.directionBtn}>Get Directions</button>
+						</div>
 
-					<div className={styles.south}>
-						<p>
-							<span>Southern California</span>
-							<br />
-							12345 Angelenos Way
-							<br />
-							Los Angeles, CA 12345
-						</p>
-						<button className={styles.directionBtn}>Get Directions</button>
+						<div className={styles.south}>
+							<p>
+								<span>Southern California</span>
+								<br />
+								12345 Angelenos Way
+								<br />
+								Los Angeles, CA 12345
+							</p>
+							<button className={styles.directionBtn}>Get Directions</button>
+						</div>
 					</div>
 				</div>
 			</div>
