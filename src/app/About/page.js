@@ -8,6 +8,7 @@ import products from '/public/img/about/products.svg';
 import orderAhead from 'public/img/rewards/order-ahead-phone.svg';
 import exclusive from 'public/img/rewards/exclusive-member-offers.svg';
 import points from 'public/img/rewards/reward-points.svg';
+import FaqItem from '../../components/faqItem';
 import styles from '../../styles/about.module.css';
 
 export default function About() {
@@ -56,6 +57,10 @@ export default function About() {
             {pageState == 4 &&
                 <div className={styles.FAQs}>
                     <h1>Frequently Asked Questions</h1>
+                    <FaqItem question="1. Do you offer takeout or delivery options?" answer="Yes, please go to the delivery page or order page to place your order." />
+                    <FaqItem question="2. Do you have any vegetarian or vegan options?" answer="Yes, both our cucumber and avocado rolls are vegan friendly." />
+                    <FaqItem question="3. Can you accommodate dietary restrictions or allergies?" answer='Definitely! Please please specify in the "special instructions" section when placing your order.' />
+                    <FaqItem question="4. Do you serve other types of food besides sushi?" answer="Our specialty is sushi. Give it a try and your tummy will thank you." />
                 </div>
             }
             <div className={styles.about_buttons_container}>

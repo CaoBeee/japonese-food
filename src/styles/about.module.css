@@ -167,3 +167,45 @@
         width: fit-content;
         margin:auto;
     }
+
+.faq_item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Poppins-medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: rgba(237, 91, 85, 0.35);
+    width: fit-content;
+    color: black;
+    margin-bottom: 30px;
+    padding: 0px 4px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.question_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.question_container p{
+    margin-right: 10px;
+}
+
+    .question_container button {
+        border: 1.00088px solid #ED5B55;
+        background: none;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 10px;
+        font-size: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right:0;
+        margin-left: auto;
+        color: #ED5B55;
+    }
