@@ -1,39 +1,38 @@
 ﻿.container {
 	display: flex;
 	flex-direction: row;
-	margin-left: 60px;
 	height: 806.188px;
 }
 
 .order_container {
 	height: 730px;
 	right: 400px;
-	position:absolute;
+	position: absolute;
 }
 
 .address {
-	background-color: #ED5B55;
-	color:white;
+	background-color: #ed5b55;
+	color: white;
 	border-radius: 25px;
 	display: flex;
 	padding: 10px 20px;
 	width: 300px;
-	bottom:0;
-	position:absolute;
+	bottom: 0;
+	position: absolute;
 }
 
-	.address p {
-		line-height: 175%;
-	}
+.address p {
+	line-height: 175%;
+}
 
-.address a{
-	color:white;
+.address a {
+	color: white;
 	font-style: italic;
-	text-decoration:underline;
-	font-weight:500;
+	text-decoration: underline;
+	font-weight: 500;
 	font-size: 12px;
 }
 
-.address a:hover{
-	cursor:pointer;
+.address a:hover {
+	cursor: pointer;
 }

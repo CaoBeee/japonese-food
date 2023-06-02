@@ -16,7 +16,7 @@ export default function JaponLogo() {
 				alt='logo background shape'
 				width={342}
 				height={201}
-			></Image>
+			/>
 			<div className={styles.logo}>
 				<Link href='/'>
 					<Image

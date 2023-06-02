@@ -8,9 +8,6 @@
 .container {
 	font-family: 'Poppins';
 	display: flex;
-	height: 806.188px;
-	margin-left: 180px;
-	margin-top: 30px;
 }
 
 .container button {
@@ -18,14 +15,11 @@
 }
 
 .left {
-	margin-left: 30px;
 	text-align: center;
-	margin-right: 35px;
 }
 
 .header {
-	font-family: 'poppins-bold';
-	text-align: center;
+	font-family: 'Poppins-bold';
 	display: flex;
 	justify-content: center;
 	font-size: 68px;
@@ -116,11 +110,11 @@
 
 .right {
 	margin-top: -30px;
-	margin-left: 258px;
+	margin-left: 400px;
 }
 
 .contactForm label {
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 }
 
 .contactForm label,

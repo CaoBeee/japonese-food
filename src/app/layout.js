@@ -31,13 +31,15 @@ export default function RootLayout({ children }) {
 						src={topVectorLine}
 						alt='bottom vector line'
 						className='topVectorLine'
-						width={1377.99}
-						height={364.22}
+						width={1036.16}
+						height={348}
 					/>
 				</header>
-				<CartProvider>
-					<div>{children}</div>
-				</CartProvider>
+				<main>
+					<CartProvider>
+						<div>{children}</div>
+					</CartProvider>
+				</main>
 				<Image
 					src={botVectorLine}
 					alt='bottom vector lines'

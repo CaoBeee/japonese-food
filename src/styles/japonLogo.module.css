@@ -2,13 +2,13 @@
 	display: relative;
 	width: 17.03125vw;
 	height: 20.490928495197437vh;
-	margin-top: -2rem;
+	margin-top: -5px;
 }
 
 .logo {
 	position: absolute;
-	top: 1.6rem;
-	left: 1.6rem;
+	top: 2.5rem;
+	left: 2rem;
 	cursor: pointer;
 }
 

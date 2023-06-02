@@ -14,6 +14,11 @@ body {
 	overflow-x: hidden;
 }
 
+body > main {
+	margin-top: 50px;
+	margin-left: 180px;
+}
+
 .header {
 	display: inline-flex;
 	flex-direction: row;
@@ -32,10 +37,10 @@ body {
 	top: -126.49px;
 	left: 1125.17px;
 	right: 0px;
-	width: 71.7703125vw;
-	height: 38.87086446104589vh;
-	margin-top: 120px;
-	margin-left: -260px;
+	width: 50.7703125vw;
+	height: 40.87086446104589vh;
+	margin-top: 80px;
+	margin-left: -160px;
 	z-index: -2;
 }
 

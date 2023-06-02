@@ -6,9 +6,8 @@
 }
 
 .container {
-	margin-top: 30px;
 	display: flex;
-	margin-left: 180px;
+	flex-direction: row;
 }
 
 .leftContainer {
@@ -35,8 +34,9 @@
 }
 
 .vectorContainer {
-	margin-left: 209px;
-	margin-bottom: 58px;
+	margin-left: 230px;
+	margin-right: -100px;
+	margin-top: -40px;
 }
 
 .bigCircle {
