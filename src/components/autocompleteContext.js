@@ -53,7 +53,6 @@ export default function AutocompleteContext() {
 				<Link
 					className={styles.arrow}
 					href={'/Order'}
-					onClick={onArrowClick}
 				>
 					<Image
 						src={arrow}
