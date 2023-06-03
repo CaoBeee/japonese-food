@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import styles from '@/styles/Delivery.module.css'
 import addressIcon from '/public/img/delivery/InputAddressIcon.svg'
@@ -11,13 +12,20 @@ import '@geoapify/geocoder-autocomplete/styles/minimal.css'
 import Link from 'next/link'
 
 export default function AutocompleteContext() {
-	//GEOAPIFY
 	function onPlaceSelect(value) {
 		console.log(value)
+		setDeliveryAddress(value.properties.address_line1)
 	}
 
 	function onSuggestionChange(value) {
 		console.log(value)
+	}
+
+	const [deliveryAddress, setDeliveryAddress] = useState('');
+
+	const onArrowClick = () => {
+		localStorage.setItem('deliveryAddress', deliveryAddress)
+		console.log(deliveryAddress)
 	}
 
 	return (
@@ -32,6 +40,7 @@ export default function AutocompleteContext() {
 					alt='Icon'
 				/>
 				<GeoapifyGeocoderAutocomplete
+					value={deliveryAddress}
 					limit={2}
 					placeholder='Enter delivery address'
 					BiasByCountryCode={'US'}
@@ -39,10 +48,12 @@ export default function AutocompleteContext() {
 					debounceDelay={300}
 					placeSelect={onPlaceSelect}
 					suggestionsChange={onSuggestionChange}
-				></GeoapifyGeocoderAutocomplete>
+					onUserInput={(e) => setDeliveryAddress(e)}
+				/>
 				<Link
 					className={styles.arrow}
 					href={'/Order'}
+					onClick={onArrowClick}
 				>
 					<Image
 						src={arrow}
