@@ -7,15 +7,6 @@ import Link from 'next/link'
 import AutocompleteContext from '@/components/autocompleteContext'
 
 export default function Delivery() {
-	//GEOAPIFY
-	function onPlaceSelect(value) {
-		console.log(value)
-	}
-
-	function onSuggestionChange(value) {
-		console.log(value)
-	}
-
 	return (
 		<div className={styles.container}>
 			<div className={styles.leftContainer}>

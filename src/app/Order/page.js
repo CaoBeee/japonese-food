@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation'
 
 export default function Order() {
 	const { cartItems } = useContext(CartContext)
+	const deliveryAddress = localStorage.getItem('deliveryAddress')
 	return (
 		<div className={styles.container}>
 			<MenuSelections />
@@ -22,7 +23,7 @@ export default function Order() {
 							<em>Delivering to:</em>
 						</b>
 						<br />
-						Delivery Address Here
+						{deliveryAddress}
 						<br />
 						<br />
 						<Link
