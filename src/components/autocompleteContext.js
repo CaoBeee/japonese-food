@@ -14,7 +14,7 @@ import Link from 'next/link'
 export default function AutocompleteContext() {
 	function onPlaceSelect(value) {
 		console.log(value)
-		setDeliveryAddress(value.properties.address_line1)
+		setDeliveryAddress(value?.properties.formatted)
 	}
 
 	function onSuggestionChange(value) {
@@ -26,6 +26,14 @@ export default function AutocompleteContext() {
 	const onArrowClick = () => {
 		localStorage.setItem('deliveryAddress', deliveryAddress)
 		console.log(deliveryAddress)
+	}
+
+	const onEnter = (e) => () => {
+		console.log(e.key)
+		if (e.key === 'Enter' || e.keyCode === 13) {
+			localStorage.setItem('deliveryAddress', deliveryAddress)
+			console.log(deliveryAddress)
+		}
 	}
 
 	return (
@@ -48,17 +56,18 @@ export default function AutocompleteContext() {
 					debounceDelay={300}
 					placeSelect={onPlaceSelect}
 					suggestionsChange={onSuggestionChange}
-					onUserInput={(e) => setDeliveryAddress(e)}
+					onUserInput={(e) =>	setDeliveryAddress(e)}
 				/>
 				<Link
 					className={styles.arrow}
 					href={'/Order'}
+					onClick={onArrowClick}
 				>
 					<Image
 						src={arrow}
 						alt='Icon'
 					/>
-				</Link>
+					</Link>
 			</div>
 		</GeoapifyContext>
 	)
