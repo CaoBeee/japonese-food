@@ -14,6 +14,8 @@ import styles from '../../styles/about.module.css'
 export default function About() {
 	const [pageState, setPageState] = useState(1)
 	return (
+		<>
+			<title>About</title>
 		<div className={styles.container}>
 			{pageState == 1 && (
 				<div className={styles.our_company}>
@@ -174,5 +176,6 @@ export default function About() {
 				</span>
 			</div>
 		</div>
+		</>
 	)
 }

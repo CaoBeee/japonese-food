@@ -6,8 +6,16 @@ import sushi from '/public/img/delivery/Sushi.png'
 import Link from 'next/link'
 import AutocompleteContext from '@/components/autocompleteContext'
 
+export const metadata = {
+	title: 'Delivery',
+	description: "Delivery Page"
+}
+
 export default function Delivery() {
+
 	return (
+		<>
+			<title>Delivery</title>
 		<div className={styles.container}>
 			<div className={styles.leftContainer}>
 				<h1 className={styles.header}> You order,</h1>
@@ -34,6 +42,7 @@ export default function Delivery() {
 					priority={true}
 				/>
 			</div>
-		</div>
+			</div>
+			</>
 	)
 }

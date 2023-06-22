@@ -49,6 +49,9 @@ export default function Contact() {
 	feel free to contact us at`
 
 	return (
+		<>
+		
+		<title>Contact</title>
 		<div className={styles.container}>
 			<div className={styles.left}>
 				<h1 className={styles.header}>Get in touch</h1>
@@ -142,6 +145,7 @@ export default function Contact() {
 					</div>
 				)}
 			</div>
-		</div>
+			</div>
+			</>
 	)
 }

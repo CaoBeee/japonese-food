@@ -10,11 +10,6 @@ import botVectorLine from '/public/img/home/BottomVectorLines.svg'
 import Footer from '@/components/footer'
 import { CartProvider } from '../components/cartContext'
 
-export const metadata = {
-	title: 'Japon',
-	description: 'Japanese Food',
-}
-
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>

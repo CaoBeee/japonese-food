@@ -12,6 +12,8 @@ export default function Order() {
 	const { cartItems } = useContext(CartContext)
 	const deliveryAddress = localStorage.getItem('deliveryAddress')
 	return (
+		<>
+			<title>Order</title>
 		<div className={styles.container}>
 			<MenuSelections />
 			<MenuGallery />
@@ -36,5 +38,6 @@ export default function Order() {
 				</div>
 			</div>
 		</div>
+		</>
 	)
 }
