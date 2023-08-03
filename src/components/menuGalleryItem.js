@@ -82,8 +82,8 @@ export default function MenuItem({ menuId, title, menuImage, description, initia
 						transform: hovered || showingAddNotif ? 'scale(1.1)' : 'scale(1)',
 					}}
 				>
-					<h2>{title}</h2>
-					<p>{description}</p>
+					<h2 style={{ opacity: showingAddNotif ? 0 : 1 }}>{title}</h2>
+					<p style={{ opacity: showingAddNotif ? 0 : 1 }}>{description}</p>
 					<button
 						style={{ cursor: !alreadyInCart ? 'pointer' : 'default' }}
 						onClick={handleClick}
