@@ -10,8 +10,10 @@ import { usePathname } from 'next/navigation'
 
 export default function Order() {
 	const { cartItems } = useContext(CartContext)
+	const deliveryAddress = null
 	if (typeof window !== 'undefined') {
 		const deliveryAddress = localStorage.getItem('deliveryAddress')
+	} else {
 	}
 	return (
 		<>
