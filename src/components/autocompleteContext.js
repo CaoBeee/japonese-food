@@ -21,14 +21,14 @@ export default function AutocompleteContext() {
 		console.log(value)
 	}
 
-	const [deliveryAddress, setDeliveryAddress] = useState('');
+	const [deliveryAddress, setDeliveryAddress] = useState('')
 
 	const onArrowClick = () => {
 		localStorage.setItem('deliveryAddress', deliveryAddress)
 		console.log(deliveryAddress)
 	}
 
-	const onEnter = (e) => () => {
+	const onEnter = e => () => {
 		console.log(e.key)
 		if (e.key === 'Enter' || e.keyCode === 13) {
 			localStorage.setItem('deliveryAddress', deliveryAddress)
@@ -56,7 +56,7 @@ export default function AutocompleteContext() {
 					debounceDelay={300}
 					placeSelect={onPlaceSelect}
 					suggestionsChange={onSuggestionChange}
-					onUserInput={(e) =>	setDeliveryAddress(e)}
+					onUserInput={e => setDeliveryAddress(e)}
 				/>
 				<Link
 					className={styles.arrow}
@@ -67,7 +67,7 @@ export default function AutocompleteContext() {
 						src={arrow}
 						alt='Icon'
 					/>
-					</Link>
+				</Link>
 			</div>
 		</GeoapifyContext>
 	)
