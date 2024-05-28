@@ -1,7 +1,7 @@
 'use client'
 import React, { useContext } from 'react'
 import Image from 'next/image'
-import trash from '/public/img/menu/Trash.png'
+import trash from '/public/img/menu/trash.png'
 import CartContext from './cartContext'
 import styles from '../styles/cart.module.css'
 
