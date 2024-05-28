@@ -21,22 +21,22 @@ export default function About() {
 					<div className={styles.our_company}>
 						<h1>Our Company</h1>
 						<p>
-							We believe that great sushi starts with the freshest ingredients, and that's why we
-							source only the finest seafood, vegetables, and rice available. Our talented sushi
+							We believe that great sushi starts with the freshest ingredients, and that&apos;s why
+							we source only the finest seafood, vegetables, and rice available. Our talented sushi
 							chefs craft each roll with precision and care, ensuring that every bite is a perfect
 							balance of flavors and textures.
 							<br />
 							<br />
-							But we're more than just a sushi restaurant - we're a community of food lovers who
-							share a passion for great food and great company. We're dedicated to providing a warm,
-							welcoming atmosphere where our customers can gather, relax, and enjoy the simple
-							pleasures of good food and good company.
+							But we&apos;re more than just a sushi restaurant - we&apos;re a community of food
+							lovers who share a passion for great food and great company. We&apos;re dedicated to
+							providing a warm, welcoming atmosphere where our customers can gather, relax, and
+							enjoy the simple pleasures of good food and good company.
 							<br />
 							<br />
 							So come join us at our sushi restaurant and experience the true taste of Japan. From
 							classic favorites like the California Roll, to exciting new creations that will
-							tantalize your taste buds, we're sure you'll find something to love. We look forward
-							to welcoming you to our restaurant and sharing our love of sushi with you.{' '}
+							tantalize your taste buds, we&apos;re sure you&apos;ll find something to love. We look
+							forward to welcoming you to our restaurant and sharing our love of sushi with you.{' '}
 						</p>
 					</div>
 				)}
@@ -61,9 +61,9 @@ export default function About() {
 							natural flavors of each ingredient. <br />
 							<br />
 							At our sushi restaurant, we believe that the key to great sushi is starting with the
-							best ingredients. That's why we're committed to using only the freshest, highest
-							quality ingredients available. We're confident that you'll taste the difference in
-							every bite.
+							best ingredients. That&apos;s why we&apos;re committed to using only the freshest,
+							highest quality ingredients available. We&apos;re confident that you&apos;ll taste the
+							difference in every bite.
 						</p>
 					</div>
 				)}
@@ -98,15 +98,15 @@ export default function About() {
 							</div>
 						</div>
 						<p>
-							As a member, you'll enjoy exclusive benefits and rewards, including special discounts,
-							free appetizers, and more. With every purchase you make, you'll earn points that can
-							be redeemed for free sushi rolls, nigiri, and sashimi, as well as other exciting
-							rewards.
+							As a member, you&apos;ll enjoy exclusive benefits and rewards, including special
+							discounts, free appetizers, and more. With every purchase you make, you&apos;ll earn
+							points that can be redeemed for free sushi rolls, nigiri, and sashimi, as well as
+							other exciting rewards.
 							<br />
 							<br />
 							Joining our rewards program is quick and easy. Simply sign up online or in-store, and
-							start earning points right away. And with every purchase, you'll be one step closer to
-							earning free sushi and other amazing rewards.
+							start earning points right away. And with every purchase, you&apos;ll be one step
+							closer to earning free sushi and other amazing rewards.
 						</p>
 					</div>
 				)}
