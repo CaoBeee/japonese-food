@@ -9,10 +9,12 @@ import blueStar from '/public/img/home/BlueStar.svg'
 import sVector from '/public/img/home/S-ShapeVector.svg'
 import Link from 'next/link'
 
+/* causes build error
 export const metadata = {
 	title: 'Japonese Food',
 	description: 'Japanese Food',
 }
+*/
 
 export default function Home() {
 	const faviconLink = (
